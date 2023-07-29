@@ -1,0 +1,39 @@
+/* FirstCardItem.css */
+.photo {
+    position: relative;
+    width: 12.5em;
+    height: 12.5em;
+    border-radius: 50%; /* Agregamos el borde redondo al 50% del tamaño de la imagen */
+ }
+ 
+.photo picture {
+    display: table-caption;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid;
+    border-radius: 50%; /* Agregamos el borde redondo al 50% del tamaño de la imagen */
+    overflow: hidden; /* Aseguramos que la imagen se muestre dentro del borde redondo */
+    background-color: white; /* Agregamos un fondo blanco detrás de la imagen */
+    z-index: 2;
+}
+
+.photo::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    right: -0.9em;
+    bottom: -0.3em;
+    background-image: linear-gradient(transparent 50%, rgb(255 255 255 / 0%) 50%), radial-gradient(circle, #fffffff5 25%, rgb(255 255 255 / 0%) 25%);
+    background-size: 10px 10px;
+    border-radius: 50%;
+}
+.photo picture img {
+    position: absolute;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hacemos que la imagen cubra todo el espacio dentro del borde redondo */
+}
