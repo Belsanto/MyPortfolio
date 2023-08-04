@@ -10,7 +10,9 @@ function downloadCV() {
 
 function ButtonCV() {
   return (
+    <aside className='cv-box'>
       <button className='button-cv' onClick={downloadCV}>Descargar CV</button>
+    </aside>
   );
 }
 

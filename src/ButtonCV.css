@@ -1,7 +1,11 @@
+.cv-box{
+    min-width: 7.5em;
+    min-height: 2.9em;
+}
 .button-cv{
+    width: 100%;
+    height: 100%;
     color: white;
-    width: 38%;
-    height: 45px;
     border: 2px solid white;
     border-radius: 50px;
     display: grid;
@@ -9,4 +13,10 @@
     box-shadow: 1px 2px 20px 0px #00000080;
     cursor: pointer;
     background-color: transparent;
+    padding: 5%;
+    transition: .9s ease all;
+}
+
+.button-cv:hover{
+    transform: scale(.9);
 }

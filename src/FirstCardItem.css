@@ -2,10 +2,9 @@
     width: 80%;
     height: 100%;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
+    display: grid;
+    place-content: space-around;
+    justify-items: center
 }
 
 
