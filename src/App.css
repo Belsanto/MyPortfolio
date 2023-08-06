@@ -25,3 +25,16 @@ li{
   list-style:none;
 }
 
+h1{
+  font-size: 2em;
+  background: linear-gradient(to right, #069AAC, #3CB686, #75D45D);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h2{
+  font-size: 1em;
+  font-weight: bold;
+  padding: .5em;
+}
