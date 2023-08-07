@@ -1,6 +1,12 @@
-.main-card{
+.card-portfolio{
     height: 80vh;
     width: 80vw;
+    
+}
+
+.main-card{
+    height: 100%;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: row;

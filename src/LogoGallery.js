@@ -1,5 +1,4 @@
 // ProfesionalCardItem.js
-import React from 'react';
 import './LogoGallery.css';
 
 import AtlassianLogo from './utils/logos/Atlassian-Logo.png';
@@ -18,6 +17,7 @@ import OracleApexLogo from './utils/logos/oracle-apex-logo.png';
 import PlSqlLogo from './utils/logos/pl-sql-logo.png';
 
 function LogoGallery() {
+  
   const logos = [
     AtlassianLogo,
     AngularLogo,
@@ -62,4 +62,4 @@ function LogoGallery() {
   );
 }
 
-export default LogoGallery;
+export {LogoGallery};
