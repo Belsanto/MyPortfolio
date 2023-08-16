@@ -9,16 +9,16 @@ class MediaItem extends React.Component {
     return (
       <aside className='socialMedia-box'>
         <span>
-          <a href={'https://b.elsanto182@gmail.com'} > <ImGoogle2 fill='white' className="Icon-svg"/></a>
+          <a href={'https://b.elsanto182@gmail.com'} target="_blank" rel="noopener noreferrer"> <ImGoogle2 fill='white' className="Icon-svg"/></a>
         </span>
         <span>
-          <a href={'https://www.google.com'} > <RiWhatsappFill fill='white' className="Icon-svg"/></a>
+          <a href={'https://www.google.com'} target="_blank" rel="noopener noreferrer"> <RiWhatsappFill fill='white' className="Icon-svg"/></a>
         </span>
         <span>
-          <a href={'https://github.com/BelsantoUQ'} > <ImGithub fill='white' className="Icon-svg"/></a>
+          <a href={'https://github.com/BelsantoUQ'} target="_blank" rel="noopener noreferrer"> <ImGithub fill='white' className="Icon-svg"/></a>
         </span>
         <span>
-          <a href={'https://www.linkedin.com/in/belsanto/'} > <BsLinkedin fill='white' className="Icon-svg"/></a>
+          <a href={'https://www.linkedin.com/in/belsanto/'} target="_blank" rel="noopener noreferrer"> <BsLinkedin fill='white' className="Icon-svg"/></a>
         </span>
       </aside>
     );

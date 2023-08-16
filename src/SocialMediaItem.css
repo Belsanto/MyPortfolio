@@ -1,5 +1,5 @@
 .socialMedia-box{
-    padding: 2em 1em;
+    padding: .1em .3em;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -11,9 +11,9 @@
     height: auto;
     box-shadow: 2px 2px 8px 0px #00000080;
     border-radius:50%;
-    transition: .9s ease all;
+    transition: .3s ease all;
 }
 
-.Icon-svg:hover {
-    transform: scale(.9);
+.socialMedia-box span a:hover > .Icon-svg {
+    transform: scale(1.3);
 }

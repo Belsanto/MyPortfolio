@@ -15,38 +15,71 @@
     margin-left: 40%;
 }
 
-.navbar nav ul{
+.nav-list{
     align-items: center;
     justify-content: space-evenly;
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 300px;
     width: 40px;
-    transition:.9s ease all ;
+    transition:.3s ease all ;
 }
 
 .nav-icon{
     padding: .3em;
-    width: 2.1875em;
+    width: 100%;
     height: auto;
     color: #b6b6b6;
-    transition:.9s ease all ;
+    transition:.7s ease all ;
 }
-.navbar nav ul:hover{
+.nav-list:hover{
     width: 3em;
+    height: 320px;
 }
 
-.nav-icon:hover{
-    transform: scale(1.8);
+.nav-list a:hover>.nav-icon:hover{
+    transform: scale(1.6);
     padding: .1em;
     color: #3CB686;
 }
 
-.icon-active{
-    transform: scale(1.8);
+.nav-list a{
+    display: flex;
+    align-items: center;
+    width: 2.1875em;
+    position: relative; /* Agregamos esta línea para posicionar correctamente el tooltip */
+  }
+  
+  .nav-tooltip {
+    
+    box-shadow: 2px 2px 8px 0px #00000080;
+    position: absolute;
+    left: 110%; /* Colocamos el tooltip a la derecha del icono */
+    transform: translateY(-50%);
+    background-color: white;
+    color: #3CB686;
+    padding: 0.5em;
+    margin: 0.2em;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0; /* Lo hacemos invisible por defecto */
+    pointer-events: none; /* Evitamos que el tooltip bloquee interacciones con el enlace */
+    transition: opacity 0.5s ease;
+  }
+  
+  .nav-list a:hover .nav-tooltip {
+    opacity: 1; /* Mostramos el tooltip en hover */
+  }
+
+  .icon-active svg{
+    transform: scale(1.6);
     padding: 0.1em;
-    transition: .9s ease all;
     fill:#069AAC;
     cursor: default;
-    
+    margin: .5em .1em;
+}
+
+.icon-active .nav-tooltip{
+    background-color: white;
+    color: #069AAC;
 }

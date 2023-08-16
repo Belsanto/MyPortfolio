@@ -5,10 +5,10 @@ import { NavBarItem } from './NavBarItem';
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <MainCard/>
       <NavBarItem/>
-    </div>
+    </main>
   );
 }
 

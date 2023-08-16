@@ -8,10 +8,11 @@
 .first-card h1 {
     font-size: 1.6em; /* Puedes ajustar el tamaño del nombre según tus preferencias */
     padding: 0 1.33em;
-    color: white;
+    color: #eceff1;
 }
 
 .subtitle {
     font-size: 1.1em; /* Tamaño más pequeño para el subtítulo */
-    padding: 5px 1.33em 0 1.33em; /* Espacio entre el nombre y el subtítulo */
+    padding: .33em; /* Espacio entre el nombre y el subtítulo */
+    color: #eceff1;
 }

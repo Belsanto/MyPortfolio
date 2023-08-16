@@ -2,9 +2,9 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <aside className='footer'>
-        <p>2023 Santiago Velandia Gallo</p>
-    </aside>
+    <footer className='footer'>
+        <p>2023 Quindío - Colombia</p>
+    </footer>
 
   );
 }

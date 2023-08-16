@@ -8,7 +8,7 @@
     display: flex;
     animation: knowledge-bar 25s linear infinite;
     -webkit-animation: knowledge-bar 25s linear infinite;
-    width: calc(100px * 28); /* Ajusta la cantidad total de logos duplicados */
+    width: calc(100px * 30); /* Ajusta la cantidad total de logos duplicados */
 }
 
 .logo-item {
@@ -32,7 +32,7 @@
     }
     
     100%{
-        -webkit-transform: translateX(calc(-100px * 14));
-        transform: translateX(calc(-100px * 14));
+        -webkit-transform: translateX(calc(-100px * 15));
+        transform: translateX(calc(-100px * 15));
     }
 }

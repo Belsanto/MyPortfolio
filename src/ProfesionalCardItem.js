@@ -1,57 +1,39 @@
-import React, { useEffect } from 'react';
-import { LogoGallery } from './LogoGallery';
 import './ProfesionalCardItem.css';
-import BackgroungDogs from './utils/dogos.JPG';
+import ExperienceFlow from './ExperienceFlow';
+import Experiience1 from './utils/TOC CERTIFICACION LABORAL.pdf';
+import Experiience2 from './utils/certificado multip.pdf';
+
+
+const workExperience = [
+  {
+    id: 1,
+    position: 'Desarrollador de Software',
+    company: 'Technologies of Colombia',
+    startDate: 'Enero de 2023',
+    endDate: 'Junio de 2023',
+    time: '6 meses',
+    description: 'Contribuí en la creación, integración y corrección de modulos en la parte administrativa de un software clínico en APEX(Oracle Application Express) aplicando tecnicas avanzadas de consultas y creación de funciones y/o procedimientos con PL/SQL, tambíen contribuí en un proyecto en JAVA en la creación de servicios SOAP. También brindé asesoramiento y acompañamiento a los usuarios cuando estos presentaban un error ya sea de código y de manejo del software. Además llevaba a cabo pruebas manuales exhaustivas en los módulos que desarrollaba y/o modificaba, identificando y corrigiendo defectos antes de su liberación, esto garantizaba la calidad y funcionalidad del software.',
+    certify: Experiience1,
+    skills: ['JavaScript', 'CSS','Oracle SQL','APEX', 'PL/SQL', 'Java', 'SOAP']
+  },
+  {
+    id: 2,
+    position: 'Técnico en Programación',
+    company: 'Empresa Multipropósito de Calarcá',
+    startDate: 'Septiembre de 2018',
+    endDate: 'Marzo de 2019',
+    time: '6 meses',
+    description: 'Estuve a cargo de la creación de un software funcional para el área de servicio al cliente usando JAVA como lenguaje principal y MySQL para la base de datos. También realicé una web interna en WordPress para que los trabajadores de la empresa pudieran acceder a las aplicaciones necesarias para desempeñar sus labores a la vez que permitía la realización de publicaciones de eventos o acontecimientos empresariales. También contribuí con la corrección de defectos de código de algunas aplicaciones de la empresa realizadas en PHP.',
+    certify: Experiience2,
+    skills: ['Java SE', 'MySQL', 'PHP', 'Desarrollo Web', 'WordPress']
+  },
+];
 
 function ProfesionalCardItem() {
-
   return (
-    <div className='card-about'>
-      <section className='card card-profesional'>
-        <aside className='card-text'>
-          <h1>SOBRE MI:</h1>
-          <p>
-            <span>¡Hola de nuevo!</span>, Soy un técnico en desarrollo de software en proceso de completar mi ingeniería en sistemas y computación en la Universidad del Quindío, cursando los últimos dos semestres en la jornada nocturna.
-          </p>
-          <p>
-            Mi pasión, además de la tecnología, son los videojuegos, la naturaleza y los animales.
-          </p>
-        </aside>
-        <aside className='card-window'>
-        </aside>
-        <aside className='card-tecnologies'>
-          <h2>Estas son algunas de las las tecnologías que manejo: </h2>
-          <LogoGallery/>
-        </aside>
-        <aside className='card-text'>
-          <p>
-            Mi trayectoria comenzó en 2017 cuando me sumergí en el desarrollo de software con Java de manera autodidacta mientras trabajaba en un callcenter. Esta experiencia me enseñó a lidiar con clientes y a solucionar problemas de manera efectiva, desarrollando habilidades de comunicación y resolución de conflictos.
-          </p>
-          <p>
-            Desde entonces, he explorado diversas áreas, incluyendo tecnología e infraestructura, como el mantenimiento de sistemas, redes, desarrollo de software funcional (usando Java, PHP, JavaScript y mySQL) y he trabajado con grandes cantidades de datos, diseñando tablas con sus campos, comentarios e índices, y realizando consultas de grado avanzado para extraer información relevante de las bases de datos en tiempo real. También he realizado varios cursos y proyectos universitarios con tecnologías de desarrollo front-end (como React y Angular) y backend (como Spring Boot y FastAPI), lo que me ha brindado una perspectiva integral del desarrollo de aplicaciones.
-          </p>
-        </aside>
-        <aside className='card-window'>
-        </aside>
-        <aside className='card-text'>
-          <p>
-            Además, he desarrollado un nivel avanzado de inglés a lo largo de los años, todo esto me ayuda a demostrar mi capacidad de adaptación y motivación para seguir aprendiendo y creciendo en el mundo tecnológico concretamente del software.
-          </p>
-          <p>
-            Una experiencia reciente me mostró la importancia de la calidad del software y la relevancia de roles como QA. Por esta razón, me he interezado en el aprendizaje de automatización y tecnicas de pruebas de software utilizando tecnologías como Cypress y Playwright.
-          </p>
-          <p>
-            Gracias por visitar mi portafolio web, aquí podrás conocer más sobre mi evolución como profesional, proyectos destacados y cómo mi pasión por la tecnología se ha traducido en resultados concretos. ¡Espero que disfrutes explorando mi trayectoria y habilidades tecnológicas!
-          </p>
-          <h2>ACTUALMENTE BUSCO AMPLIAR MI CAMPO LABORAL</h2>
-          <p>Si quieres ponerte en contacto conmigo, por favor completa este pequeño <a href='#'>formulario</a></p>
-        </aside>
-      </section>
-      <section className='card parallax'>
-        <figure>
-          <img src={BackgroungDogs} alt='Perros' />
-        </figure>
-      </section>
+    <div className='card card-section profesional-card'>
+      <h1>Experiencia Laboral</h1>
+      <ExperienceFlow experiences={workExperience} />
     </div>
   );
 }

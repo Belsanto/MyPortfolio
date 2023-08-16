@@ -1,4 +1,3 @@
-// ProfesionalCardItem.js
 import './LogoGallery.css';
 
 import AtlassianLogo from './utils/logos/Atlassian-Logo.png';
@@ -15,6 +14,7 @@ import JenkinsLogo from './utils/logos/Jenkins-logo.png';
 import JavaLogo from './utils/logos/java-logo.png';
 import OracleApexLogo from './utils/logos/oracle-apex-logo.png';
 import PlSqlLogo from './utils/logos/pl-sql-logo.png';
+import PyLogo from './utils/logos/Python-Logo.png';
 
 function LogoGallery() {
   
@@ -22,6 +22,7 @@ function LogoGallery() {
     AtlassianLogo,
     AngularLogo,
     ReactLogo,
+    PyLogo,
     JavaScriptLogo,
     PlaywrightLogo,
     JenkinsLogo,
@@ -36,6 +37,7 @@ function LogoGallery() {
     AtlassianLogo,
     AngularLogo,
     ReactLogo,
+    PyLogo,
     JavaScriptLogo,
     PlaywrightLogo,
     JenkinsLogo,

@@ -4,23 +4,107 @@
     height: 100%;
     display: grid;
     place-items: center;
+    overflow: hidden;
+    position: relative;
 }
 
-.content-card span:nth-child(1){
+.particle{
+    border-radius: 6px;
+    position: absolute;
+}
+.dot-1{
+    width: 22px;
+    height: 22px;
+    opacity: .3;
+    background-color: #3CB686;
+    top: 50px;
+    right: 284px;
+    transform: rotate(20deg);
+}
+.dot-2{
+    width: 20px;
+    height: 20px;
+    opacity: .2;
+    background-color: #069AAC;
+    top: 40px;
+    right: 40px;
+    transform: rotate(-14deg);
+}
+.dot-3{
+    width: 24px;
+    height: 24px;
+    opacity: .3;
+    background-color: #75D45D;
+    top: -64px;
+    right: 28px;
+    transform: rotate(26deg);
+}
+.dot-4{
+    width: 17px;
+    height: 17px;
+    opacity: .2;
+    background-color: #75D45D;
+    top: -64px;
+    right: 364px;
+    transform: rotate(-17deg);
+}
+.dot-5{
+    width: 24px;
+    height: 24px;
+    opacity: .4;
+    background-color: #069AAC;
+    top: 20px;
+    transform: rotate(-11deg);
+}
+.dot-6{
+    width: 17px;
+    height: 17px;
+    opacity: .2;
+    background-color: #3CB686;
+    top: -40px;
+    right: 159px;
+    transform: rotate(51deg);
+}
+
+.dot-7{
+    width: 20px;
+    height: 20px;
+    opacity: .3;
+    background-color: #75D45D;
+    top: 64px;
+    right: 400px;
+    transform: rotate(51deg);
+}
+
+.dot-8{
+    width: 20px;
+    height: 20px;
+    opacity: .3;
+    background-color: #069AAC;
+    top: -44px;
+    right: 242px;
+    transform: rotate(51deg);
+}
+
+.card-home section:nth-child(1){
     align-self: end;
+    position: relative;
+    transform: translate3d(0px, 0px, 0px) scale3d(1.4, 1.4, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }
 
-.content-card span:nth-child(2){
+.card-home section:nth-child(2){
     width: 50%;
     font-weight: lighter;
-    
 }
 
+.card-home section h1{
+    position: relative;
+}
 .typing-text{
     display: block;
     white-space: nowrap;
-    border-right: 0.15em solid #3CB686;;
-    width:  48ch;
+    border-right: 0.15em solid #3CB686;
+    width:  50ch;
     animation: typing 3s steps(48), blink .5s infinite step-end alternate;
     overflow: hidden;
 }
