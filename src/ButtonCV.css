@@ -21,6 +21,7 @@
     background-image: linear-gradient(to right, white 0%, white 50%, transparent 50%, transparent 100%);
     background-size: 200% 100%;
     background-position: right bottom;
+    letter-spacing: .3em;
 }
 
 .button-cv:hover {

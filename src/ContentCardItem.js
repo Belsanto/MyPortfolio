@@ -3,15 +3,17 @@ import { Home } from './Home';
 import { PersonalCardItem } from './PersonalCardItem';
 import { ProfesionalCardItem } from './ProfesionalCardItem';
 import { ProyectsCardItem } from './ProyectsCardItem';
+import { StudyCard } from './StudyCard';
 
 function ContentCardItem() {
   const shouldShow = true;
 
   return (
     <section className='card content-card'>
-      {shouldShow && <Home/>}
+      {!shouldShow && <Home/>}
       {!shouldShow && <PersonalCardItem/>}
       {!shouldShow && <ProfesionalCardItem/>}
+      {shouldShow && <StudyCard/>}
       {!shouldShow && <ProyectsCardItem/>}
     </section>
   );

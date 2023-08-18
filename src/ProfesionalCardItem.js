@@ -31,7 +31,7 @@ const workExperience = [
 
 function ProfesionalCardItem() {
   return (
-    <div className='card card-section profesional-card'>
+    <div className='card card-section'>
       <h1>Experiencia Laboral</h1>
       <ExperienceFlow experiences={workExperience} />
     </div>
