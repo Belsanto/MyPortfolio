@@ -2,6 +2,7 @@ import './ProfesionalCardItem.css';
 import ExperienceFlow from './ExperienceFlow';
 import Experiience1 from './utils/TOC CERTIFICACION LABORAL.pdf';
 import Experiience2 from './utils/certificado multip.pdf';
+import { LogoGallery } from './LogoGallery';
 
 
 const workExperience = [
@@ -32,7 +33,14 @@ const workExperience = [
 function ProfesionalCardItem() {
   return (
     <div className='card card-section'>
-      <h1>Experiencia Laboral</h1>
+      <section className='card-title'>
+        <h1>Experiencia Laboral Profesional</h1>
+      </section>
+      
+      <aside className='card-tecnologies'>
+            <h2>Estas son algunas de las tecnologías que he usado: </h2>
+            <LogoGallery/>
+      </aside>
       <ExperienceFlow experiences={workExperience} />
     </div>
   );

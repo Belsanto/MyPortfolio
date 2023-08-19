@@ -1,8 +1,7 @@
 .cv-box {
     min-width: 7.5em;
     min-height: 2.9em;
-    padding: 0.3em;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .button-cv {
@@ -29,4 +28,5 @@
     border: none;
     color: #323235;
     transform: scale(1.05);
+    border: 1px solid #3CB686;
 }

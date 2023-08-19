@@ -48,10 +48,9 @@
     align-items: center;
     width: 2.1875em;
     position: relative; /* Agregamos esta línea para posicionar correctamente el tooltip */
-  }
-  
-  .nav-tooltip {
-    
+}
+
+.nav-tooltip {
     box-shadow: 2px 2px 8px 0px #00000080;
     position: absolute;
     left: 110%; /* Colocamos el tooltip a la derecha del icono */
@@ -65,13 +64,13 @@
     opacity: 0; /* Lo hacemos invisible por defecto */
     pointer-events: none; /* Evitamos que el tooltip bloquee interacciones con el enlace */
     transition: opacity 0.5s ease;
-  }
-  
-  .nav-list a:hover .nav-tooltip {
-    opacity: 1; /* Mostramos el tooltip en hover */
-  }
+}
 
-  .icon-active svg{
+.nav-list a:hover .nav-tooltip {
+    opacity: 1; /* Mostramos el tooltip en hover */
+}
+
+.icon-active svg{
     transform: scale(1.6);
     padding: 0.1em;
     fill:#069AAC;

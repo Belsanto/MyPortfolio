@@ -11,6 +11,7 @@
 .particle{
     border-radius: 6px;
     position: absolute;
+    transition: .1s ease-out all;
 }
 .dot-1{
     width: 22px;

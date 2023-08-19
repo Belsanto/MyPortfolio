@@ -10,10 +10,10 @@ function ContentCardItem() {
 
   return (
     <section className='card content-card'>
-      {!shouldShow && <Home/>}
+      {shouldShow && <Home/>}
       {!shouldShow && <PersonalCardItem/>}
       {!shouldShow && <ProfesionalCardItem/>}
-      {shouldShow && <StudyCard/>}
+      {!shouldShow && <StudyCard/>}
       {!shouldShow && <ProyectsCardItem/>}
     </section>
   );

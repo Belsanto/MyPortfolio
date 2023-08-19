@@ -4,7 +4,8 @@
     width: 12.5em;
     height: 12.5em;
     border-radius: 50%; /* Agregamos el borde redondo al 50% del tamaño de la imagen */
- }
+    margin-top: 10px;
+}
  
 .photo picture {
     display: table-caption;
@@ -44,4 +45,5 @@
 }
 .photo picture img:hover {
     transform: rotate(-12deg) scale(1.05);
+    cursor: pointer;
 }

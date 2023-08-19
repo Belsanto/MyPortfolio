@@ -10,7 +10,7 @@ function Home() {
         const x = (window.innerWidth - e.pageX * speed) / 100;
         const y = (window.innerHeight - e.pageY * speed) / 100;
 
-        particle.style.transform = `translateX(${x}px) translateY(${y}px) rotate(${rotation}deg)`;
+        particle.style.transform = `scale(${x/30}) translateX(${x}px) translateY(${y}px) rotate(${rotation}deg)`;
       });
     };
 

@@ -6,8 +6,13 @@
     place-content: space-around;
     justify-items: center;
     background: transparent;
-
+    padding: 10px;
 }
 
+.first-card h1 {
+    /* font-size: 1.6em; /*  ajustar el tamaño del nombre según el tamaño de la pantalla*/
+     padding: 0 1.33em;
+     color: #eceff1;
+ }
 
 

@@ -28,10 +28,9 @@
     text-align: justify;
     text-wrap: balance;
 }
-.card-tecnologies{
-    background-color: #f6f6f6;
+.card-text .card-title{
+    min-height: 15vh;
 }
-
 .card-about {
     height: 100%;
 }

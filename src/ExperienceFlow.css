@@ -33,7 +33,6 @@
   background-color: #f6f6f6;
   transform: scale(1.02);
   box-shadow: 0 0 #e6ebef, 0 4px 24px rgba(0, 0, 0, .08);
-
 }
 .experience-card.left {
   align-self: flex-start;
@@ -66,17 +65,4 @@
   font-size: 0.8em;
   opacity: .5;
 }
-.download-exp-icon svg{
-  position: absolute;
-  right: 5%;
-  top: 5%;
-  width: 2em;
-  height: 2em;
-  fill: #5e5e63;
-  transition: .3s ease-out all;
-}
 
-.download-exp-icon svg:hover{
-  fill: #3CB686;
-  transform: scale(1.1);
-}
