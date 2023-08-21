@@ -23,7 +23,8 @@ function PersonalCardItem() {
             naturaleza y los animales.
           </p>
           <div>
-      <SkillsContainer/>
+          <h3><b>My Skills</b></h3>
+          <SkillsContainer/>
     </div>
     <p>
           Hoy por hoy me encuentro cursando los últimos dos semestres en ingeniería de sistemas y computación en la jornada nocturna. Cuento también con una sólida formación en HTML, CSS, PL/SQL y bases de datos SQL. 
@@ -31,14 +32,12 @@ function PersonalCardItem() {
           así como familiaridad con el uso herramientas de automatización de pruebas.
           </p>
         </aside>
-        
-        
         <aside className='card-window'/>
         <aside className='card-text'>
           <p>
             Gracias por visitar mi portafolio web, aquí podrás conocer más de mi evolución como profesional, proyectos destacados y cómo mi pasión por la tecnología se ha traducido en resultados concretos. ¡Espero que disfrutes explorando mi trayectoria y habilidades!
           </p>
-          <h1 className='search-job'>ACTUALMENTE BUSCO AMPLIAR MI CAMPO LABORAL</h1>
+          <h3 className='search-job'> <b>ACTUALMENTE BUSCO AMPLIAR MI CAMPO LABORAL</b></h3>
           <p>Estoy entusiasmado por seguir creciendo profesionalmente en el campo de la tecnología y contribuir al desarrollo de soluciones innovadoras. Si buscas a alguien apasionado, con habilidades técnicas y capacidad de adaptación, estaré encantado de ser considerado para oportunidades en el sector.</p>
           {/*<p>Si quieres ponerte en contacto conmigo, por favor completa este pequeño <a href='#'>formulario</a></p>*/}
         </aside>

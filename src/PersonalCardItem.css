@@ -23,10 +23,13 @@
 .card-text p {
     margin-top: 10px;
     font-size: 0.9em;
-    font-style: italic;
     width: 50%;
     text-align: justify;
     text-wrap: balance;
+}
+
+.card-text p span{
+    font-style: italic;
 }
 .card-text .card-title{
     min-height: 15vh;

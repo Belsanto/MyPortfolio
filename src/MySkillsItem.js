@@ -20,7 +20,7 @@ const skillsData = [
 const MySkillsItem = () => {
   return (
     <div className="skills-container">
-      <h3>My Skills</h3>
+      <h3>{/* Poner aqui texto*/}</h3>
       <div className="skills-grid">
         {skillsData.map((skill, index) => (
           <div key={index} className="skill-item">

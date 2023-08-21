@@ -2,7 +2,9 @@
     text-align: center;
     margin: 40px;
   }
-  
+.skills-container h3{
+  text-align: left;
+}
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

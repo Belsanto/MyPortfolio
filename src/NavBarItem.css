@@ -74,7 +74,7 @@
     transform: scale(1.6);
     padding: 0.1em;
     fill:#069AAC;
-    cursor: default;
+    cursor: not-allowed;
     margin: .5em .1em;
 }
 

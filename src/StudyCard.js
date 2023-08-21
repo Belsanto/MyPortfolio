@@ -1,4 +1,3 @@
-import { LogoGallery } from './LogoGallery';
 import StudiesItem from './StudiesItem';
 import './StudyCard.css';
 import SENA from './utils/certific.pdf';
@@ -8,7 +7,7 @@ const studies = [
     institute: 'Universidad del Quindío',
     startDate: 'Agosto 2018',
     endDate: 'En curso',
-    title: 'Ingeniero de Sistemas y Computación',
+    title: 'Ingeniería de Sistemas y Computación',
     imagePath: 'utils/studies/img1',
     link: false,
   },{
@@ -31,9 +30,9 @@ const studies = [
 function StudyCard() {
   return (
     <section className='card card-section'>
-      <div>
+      <div className='card-study'>
         <div className="card-title">
-          <h1>Estudios y Certificaciones</h1>
+          <h1>Estudios <br/>y Certificaciones</h1>
         </div>
         <StudiesItem studies={studies} />
       </div>

@@ -3,8 +3,8 @@ import './NameItem.css';
 function NameItem() {
   return (
     <section className='presentation-box'>
-      <h1>Santiago Velandia Gallo</h1>
-      <p className='subtitle'>Desarrollador de Software</p>
+      <h1>Santiago <span>@Belsanto</span></h1>
+      <h2 className='subtitle'>Desarrollador de Software</h2>
     </section>
 
   );

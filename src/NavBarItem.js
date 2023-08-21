@@ -2,48 +2,35 @@ import './NavBarItem.css';
 import { ImBooks } from 'react-icons/im';
 import { FaUserAstronaut, FaUserGraduate, FaUserTie } from 'react-icons/fa';
 import { HiHome, HiMail } from 'react-icons/hi';
+import React from 'react';
 
-function NavBarItem() {
+const navLinks = [
+  { id: 'home', icon: <HiHome className='nav-icon' />, text: 'Home', active: false},
+  { id: 'aboutme', icon: <FaUserAstronaut className='nav-icon' />, text: 'About Me', active: false},
+  { id: 'work-experience', icon: <FaUserTie className='nav-icon' />, text: 'Work Experience', active: false},
+  { id: 'study', icon: <FaUserGraduate className='nav-icon' />, text: 'Study', active: true },
+  { id: 'proyects', icon: <ImBooks className='nav-icon' />, text: 'Projects', active: false},
+  { id: 'contact', icon: <HiMail className='nav-icon' />, text: 'Contact', active: false},
+];
+
+function NavBarItem({ onOpenModal }) {
   return (
     <section className='navbar'>
       <nav>
         <ul className='nav-list' id="navmenu">
-          <li>
-            <a href="#home" title="">
-              <HiHome className='nav-icon' />
-              <span className="nav-tooltip">Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="#aboutme" title="">
-              <FaUserAstronaut className='nav-icon' />
-              <span className="nav-tooltip">About Me</span>
-            </a>
-          </li>
-          <li>
-            <a href="#work-experience" title="">
-              <FaUserTie className='nav-icon' />
-              <span className="nav-tooltip">Work Experience</span>
-            </a>
-          </li>
-          <li>
-            <a className='icon-active' href="#study" title="">
-              <FaUserGraduate className='nav-icon' />
-              <span className="nav-tooltip">Study</span>
-            </a>
-          </li>
-          <li>
-            <a href="#proyects" title="">
-              <ImBooks className='nav-icon' />
-              <span className="nav-tooltip">Projects</span>
-            </a>
-          </li>
-          <li>
-            <a href="#contact" title="">
-              <HiMail className='nav-icon' />
-              <span className="nav-tooltip">Contact</span>
-            </a>
-          </li>
+          {navLinks.map(({ id, icon, text, active }) => (
+            <li key={id}>
+              <a
+                className={active ? 'icon-active' : ''}
+                href={`#${id}`}
+                title={text}
+                onClick={() => id === 'contact' && onOpenModal()}
+              >
+                {icon}
+                <span className="nav-tooltip">{text}</span>
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
     </section>
