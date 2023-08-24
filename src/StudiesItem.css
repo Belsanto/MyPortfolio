@@ -1,4 +1,4 @@
-.container {
+.card-flow {
 	width: 90%;
 	margin: 50px auto;
 	margin-bottom: 0;
@@ -7,7 +7,7 @@
 	position: relative;
 }
 
-.container::after {
+.card-flow::after {
 	content: "";
 	width: 2px;
 	height: 100%;
@@ -16,103 +16,4 @@
 	top: 0;
 	left: calc(50% - 1px);
 	z-index: 1;
-}
-
-.evento {
-	display: flex;
-	justify-content: space-between;
-    margin-bottom: 60px;
-    margin-top: 50px;
-	position: relative;
-}
-
-.evento::after {
-	content: "";
-	display: block;
-	width: 14px;
-	height: 14px;
-	border-radius: 100px;
-	background: #f6f6f6;
-	border: 2px solid #1b3231;
-	position: absolute;
-	z-index: 2;
-	top: calc(50% - 9px);
-	left: calc(50% - 9px);
-}
-
-.fecha {
-	display: flex;
-	align-items: center;
-	justify-content: start;
-	width: calc(42% + 20px);
-  	opacity: .8;
-}
-.foto {
-	transition: all .2s ease-out;
-	width: 42%;
-	background: #eceff1;
-	position: relative;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.foto:hover{
-	background-color: #f6f6f6;
-	transform: scale(1.02);
-	box-shadow: 0 0 #e6ebef, 0 4px 24px rgba(0, 0, 0, .08);
-
-}
-.foto::after {
-	content: "";
-	display: block;
-	border: 20px solid transparent;
-	border-left: 20px solid #fff;
-	position: absolute;
-	right: -50px;
-	top: calc(50% - 20px);
-}
-
-.foto .card h2{
-	width: 80%;
-}
-.foto .card {
-	text-align: -webkit-center;
-	padding: 15px;
-}
-
-.foto .card a svg{
-	transform: rotate(45deg);
-}
-
-.foto .card a:hover>svg{
-	transform: scale(1.1) translate(10px, 10px);
-    padding-right: 5px;
-}
-
-.evento:nth-child(even) {
-	flex-direction: row-reverse;
-}
-
-.evento:nth-child(even) .fecha {
-	justify-content: end;
-}
-
-.evento:nth-child(even) .foto::after {
-	content: "";
-	border: 20px solid transparent;
-	border-right: 20px solid #fff;
-	right: initial;
-	left: -50px;
-}
-
-.evento:nth-child(even) .foto .download-exp-icon svg {
-	left: 5%;
-}
-
-#no-link{
-	cursor: not-allowed;
-}
-
-#no-link:hover{
-	fill: crimson;
-	transform: rotate(45deg);
 }

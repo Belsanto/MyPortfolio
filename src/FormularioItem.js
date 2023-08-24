@@ -1,12 +1,14 @@
 import Contacto from './Components/Contacto/Contacto';
 import './FormularioItem.css';
 
-function FormularioItem() {
-
+function FormularioItem({onClose}) {
+  const handleClose = () => {
+    onClose();
+  };
   return (
     <>
     <aside className='card card-section card-form'>
-      <Contacto/>
+      <Contacto onClose={handleClose}/>
     </aside>
     </>
   );

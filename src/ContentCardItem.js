@@ -13,8 +13,8 @@ function ContentCardItem() {
     <section className='card content-card'>
       {shouldShow && <Home/>}
       {shouldShow && <PersonalCardItem/>}
-      {!shouldShow && <ProfesionalCardItem/>}
-      {shouldShow && <StudyCard/>}
+      {shouldShow && <ProfesionalCardItem/>}
+      {!shouldShow && <StudyCard/>}
       {shouldShow && <ProyectsCardItem/>}
     </section>
   );

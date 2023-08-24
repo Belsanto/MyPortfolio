@@ -6,7 +6,7 @@ const studies = [
   {
     institute: 'Universidad del Quindío',
     startDate: 'Agosto 2018',
-    endDate: 'En curso',
+    endDate: false,
     title: 'Ingeniería de Sistemas y Computación',
     imagePath: 'utils/studies/img1',
     link: false,

@@ -10,7 +10,7 @@ const App = () => {
 
   useEffect(() => {
     // Cambia el estado inicial del modal después de que el componente se monte
-    setIsModalOpen(true);
+    setIsModalOpen(false);
   }, []);
 
   const handleOpenModal = () => {
@@ -29,7 +29,9 @@ const App = () => {
         isOpen={isModalOpen}
         onClose={handleCloseModal}
         title="Formulario de Contacto"
-      ><FormularioItem/></Modal>
+      >
+        <FormularioItem onClose={handleCloseModal}/>
+      </Modal>
     </main>
   );
 };
