@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contacto.css';
 
-const Contacto = ({onClose}) => {
+const Contacto = ({ onClose }) => {
   // Referencia al formulario para acceder a los elementos del DOM
   const form = useRef();
   // Estado para validar la dirección de correo electrónico
@@ -57,7 +57,12 @@ const Contacto = ({onClose}) => {
 
     // Enviar el formulario utilizando la librería emailjs
     emailjs
-      .sendForm('service_pd2govc', 'template_avmq97e', form.current, 'tFqu5mXsvGw6onwmt')
+      .sendForm(
+        'service_pd2govc',
+        'template_avmq97e',
+        form.current,
+        'tFqu5mXsvGw6onwmt',
+      )
       .then((result) => {
         console.log(result.text);
         // Borrar datos del Local Storage después de enviar
@@ -72,7 +77,7 @@ const Contacto = ({onClose}) => {
   // Manejador de espera a envío del formulario
   const handleFormSubmit = (e) => {
     e.preventDefault();
-  
+
     // Obtener los valores de los campos desde el estado local
     const formData = {
       user_name: form.current.user_name.value,
@@ -80,7 +85,7 @@ const Contacto = ({onClose}) => {
       from_name: form.current.from_name.value,
       message: form.current.message.value,
     };
-  
+
     // Guardar datos en el Local Storage
     localStorage.setItem('form_data', JSON.stringify(formData));
   };
@@ -88,7 +93,7 @@ const Contacto = ({onClose}) => {
   return (
     <>
       <form className="form-card" ref={form} onSubmit={sendEmail}>
-      <label htmlFor="user_name">
+        <label htmlFor="user_name">
           <span className="label">Nombre</span>
           <input
             id="user_name"
@@ -101,7 +106,9 @@ const Contacto = ({onClose}) => {
           />
         </label>
         <label htmlFor="user_email">
-          <span className={`label ${!emailValid ? 'writing' : ''}`}>Correo</span>
+          <span className={`label ${!emailValid ? 'writing' : ''}`}>
+            Correo
+          </span>
           <input
             id="user_email"
             type="email"
@@ -112,7 +119,11 @@ const Contacto = ({onClose}) => {
             onFocus={handleInputFocus}
             onBlur={handleInputBlur}
           />
-          {!emailValid && <p className="error-message">Por favor, ingresa un correo válido.</p>}
+          {!emailValid && (
+            <p className="error-message">
+              Por favor, ingresa un correo válido.
+            </p>
+          )}
         </label>
         <label htmlFor="from_name">
           <span className="label">Asunto</span>
@@ -124,9 +135,14 @@ const Contacto = ({onClose}) => {
             onFocus={handleInputFocus}
             onBlur={handleInputBlur}
             onChange={handleFormSubmit}
-            />
+          />
         </label>
-        <label className={`text-message ${form.current && form.current.message.value !== '' ? 'writing' : ''}`} htmlFor="message">
+        <label
+          className={`text-message ${
+            form.current && form.current.message.value !== '' ? 'writing' : ''
+          }`}
+          htmlFor="message"
+        >
           <span className="label">Mensaje</span>
           <textarea
             id="message"
@@ -134,10 +150,11 @@ const Contacto = ({onClose}) => {
             required
             onFocus={handleInputFocus}
             onBlur={handleInputBlur}
-            onChange={handleFormSubmit} />
+            onChange={handleFormSubmit}
+          />
         </label>
-        <div className='card-submit'>
-          <button className='button'>
+        <div className="card-submit">
+          <button className="button">
             <input id="" type="submit" />
           </button>
         </div>

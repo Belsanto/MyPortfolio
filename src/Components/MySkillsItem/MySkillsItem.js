@@ -1,8 +1,14 @@
 import React from 'react';
-import { FaAngular, FaUnity, FaReact, FaJava,   FaWordpress } from 'react-icons/fa';
-import { BiLogoSpringBoot} from 'react-icons/bi';
-import { RiJavascriptLine} from 'react-icons/ri';
-import { SiFastapi} from 'react-icons/si';
+import {
+  FaAngular,
+  FaUnity,
+  FaReact,
+  FaJava,
+  FaWordpress,
+} from 'react-icons/fa';
+import { BiLogoSpringBoot } from 'react-icons/bi';
+import { RiJavascriptLine } from 'react-icons/ri';
+import { SiFastapi } from 'react-icons/si';
 
 import './MySkillsItem.css';
 

@@ -1,22 +1,21 @@
-
-.presentation-box{
-    text-align: center;
-    width: 100%;
-    max-height: 9.375em;
+.presentation-box {
+  text-align: center;
+  width: 100%;
+  max-height: 9.375em;
 }
-.presentation-box h1{
-    font-size: 3.75rem;
-    line-height: 1;
-    letter-spacing: -0.025em;
+.presentation-box h1 {
+  font-size: 3.75rem;
+  line-height: 1;
+  letter-spacing: -0.025em;
 }
 
-.presentation-box h1 span{
-    color: #323235;
+.presentation-box h1 span {
+  color: #323235;
 }
 .subtitle {
-    font-size: 1.5em; /* Tamaño más pequeño para el subtítulo */
-    padding: .33em; /* Espacio entre el nombre y el subtítulo */
-    color: #eceff1;
-    line-height: 1;
-    letter-spacing: -0.025em;
+  font-size: 1.5em; /* Tamaño más pequeño para el subtítulo */
+  padding: 0.33em; /* Espacio entre el nombre y el subtítulo */
+  color: #eceff1;
+  line-height: 1;
+  letter-spacing: -0.025em;
 }

@@ -1,8 +1,8 @@
 .tags-container {
-    margin-top: 10px;
-    display: flex;
-    justify-content: flex-end;
-  }
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
 
 .tags {
   display: flex;
@@ -19,6 +19,6 @@
   font-weight: 600;
 }
 
-.tag:hover{
-  opacity: .8;
+.tag:hover {
+  opacity: 0.8;
 }

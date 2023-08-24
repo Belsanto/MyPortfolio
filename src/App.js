@@ -30,7 +30,7 @@ const App = () => {
         onClose={handleCloseModal}
         title="Formulario de Contacto"
       >
-        <FormularioItem onClose={handleCloseModal}/>
+        <FormularioItem onClose={handleCloseModal} />
       </Modal>
     </main>
   );

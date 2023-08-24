@@ -17,7 +17,6 @@ import PlSqlLogo from '../../utils/logos/pl-sql-logo.png';
 import PyLogo from '../../utils/logos/Python-Logo.png';
 
 function LogoGallery() {
-  
   const logos = [
     AtlassianLogo,
     AngularLogo,
@@ -52,16 +51,16 @@ function LogoGallery() {
   ];
 
   return (
-      <aside className='knowledge-box'>
-        <div className="logo-gallery">
-          {logos.map((logo, index) => (
-            <figure className="logo-item" key={index}>
-              <img src={logo} alt={`Logo ${index}`} />
-            </figure>
-          ))}
-        </div>
-      </aside>
+    <aside className="knowledge-box">
+      <div className="logo-gallery">
+        {logos.map((logo, index) => (
+          <figure className="logo-item" key={index}>
+            <img src={logo} alt={`Logo ${index}`} />
+          </figure>
+        ))}
+      </div>
+    </aside>
   );
 }
 
-export {LogoGallery};
+export { LogoGallery };

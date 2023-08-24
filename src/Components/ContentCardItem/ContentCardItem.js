@@ -10,12 +10,12 @@ function ContentCardItem() {
   const shouldShow = false;
 
   return (
-    <section className='card content-card'>
-      {shouldShow && <Home/>}
-      {shouldShow && <PersonalCardItem/>}
-      {shouldShow && <ProfesionalCardItem/>}
-      {!shouldShow && <StudyCard/>}
-      {shouldShow && <ProyectsCardItem/>}
+    <section className="card content-card">
+      {shouldShow && <Home />}
+      {shouldShow && <PersonalCardItem />}
+      {shouldShow && <ProfesionalCardItem />}
+      {!shouldShow && <StudyCard />}
+      {shouldShow && <ProyectsCardItem />}
     </section>
   );
 }

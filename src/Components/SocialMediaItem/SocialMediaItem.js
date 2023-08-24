@@ -7,18 +7,46 @@ import { BsLinkedin } from 'react-icons/bs';
 class MediaItem extends React.Component {
   render() {
     return (
-      <aside className='socialMedia-box'>
+      <aside className="socialMedia-box">
         <span>
-          <a href={'https://b.elsanto182@gmail.com'} target="_blank" rel="noopener noreferrer"> <ImGoogle2 fill='white' className="Icon-svg"/></a>
+          <a
+            href={'https://b.elsanto182@gmail.com'}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {' '}
+            <ImGoogle2 fill="white" className="Icon-svg" />
+          </a>
         </span>
         <span>
-          <a href={'https://www.google.com'} target="_blank" rel="noopener noreferrer"> <RiWhatsappFill fill='white' className="Icon-svg"/></a>
+          <a
+            href={'https://www.google.com'}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {' '}
+            <RiWhatsappFill fill="white" className="Icon-svg" />
+          </a>
         </span>
         <span>
-          <a href={'https://github.com/BelsantoUQ'} target="_blank" rel="noopener noreferrer"> <ImGithub fill='white' className="Icon-svg"/></a>
+          <a
+            href={'https://github.com/BelsantoUQ'}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {' '}
+            <ImGithub fill="white" className="Icon-svg" />
+          </a>
         </span>
         <span>
-          <a href={'https://www.linkedin.com/in/belsanto/'} target="_blank" rel="noopener noreferrer"> <BsLinkedin fill='white' className="Icon-svg"/></a>
+          <a
+            href={'https://www.linkedin.com/in/belsanto/'}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {' '}
+            <BsLinkedin fill="white" className="Icon-svg" />
+          </a>
         </span>
       </aside>
     );
@@ -26,9 +54,7 @@ class MediaItem extends React.Component {
 }
 
 function SocialMediaItem() {
-  return (
-      <MediaItem />
-  );
+  return <MediaItem />;
 }
 
 export { SocialMediaItem };

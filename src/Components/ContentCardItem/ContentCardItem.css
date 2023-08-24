@@ -1,14 +1,14 @@
-.content-card{
-    width: 70%;
-    height: 100%;
-    position: absolute;
-    right: 0px;
-    text-align: center;
+.content-card {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  text-align: center;
 }
-.content-card main{
-    width: 100%;
-    height: 100%;
+.content-card main {
+  width: 100%;
+  height: 100%;
 }
-.hiden{
-    display: none;
+.hiden {
+  display: none;
 }

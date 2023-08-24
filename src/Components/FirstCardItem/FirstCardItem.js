@@ -9,12 +9,12 @@ import { ButtonItem } from '../ButtonItem/ButtonItem';
 
 function FirstCardItem() {
   return (
-    <aside className='card first-card'>
-      <MyPhoto/>
-      <NameItem/>
-      <SocialMediaItem/>
-      <ButtonItem/>
-      <Footer/>
+    <aside className="card first-card">
+      <MyPhoto />
+      <NameItem />
+      <SocialMediaItem />
+      <ButtonItem />
+      <Footer />
     </aside>
   );
 }

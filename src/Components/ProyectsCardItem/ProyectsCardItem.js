@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ProyectsCardItem.css';
 import video from '../../utils/videos/video1.mp4';
-import imagen1 from '../../utils/viticor.jpg'
+import imagen1 from '../../utils/viticor.jpg';
 
 const proyects = [
   {
@@ -40,11 +40,11 @@ const ProyectsCardItem = () => {
   const [hoveredVideo, setHoveredVideo] = useState(null);
 
   return (
-    <section className='card card-section'>
+    <section className="card card-section">
       <div className=" proyect-flow">
         {proyects.map((proyect, index) => (
-          <div 
-            className="proyect-card" 
+          <div
+            className="proyect-card"
             key={proyect.id}
             onMouseOver={() => setHoveredVideo(proyect)}
             onMouseLeave={() => setHoveredVideo(null)}
@@ -53,23 +53,21 @@ const ProyectsCardItem = () => {
             <p>{proyect.company}</p>
             <p>{`${proyect.startDate} - ${proyect.endDate}`}</p>
             <p>{proyect.description}</p>
-            <figure className='card-video'>
-              
+            <figure className="card-video">
               <img src={proyect.thumbnails} alt={`Logo ${index}`} />
               <video
                 className="proyect-video"
-                
                 src={hoveredVideo === proyect ? proyect.video : ''}
                 loop
                 autoPlay
                 muted
               />
             </figure>
-        </div>
-      ))}
-    </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
 
-export {ProyectsCardItem};
+export { ProyectsCardItem };

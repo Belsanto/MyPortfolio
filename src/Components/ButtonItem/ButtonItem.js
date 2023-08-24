@@ -10,8 +10,10 @@ function downloadCV() {
 
 function ButtonItem() {
   return (
-    <aside className='cv-box'>
-      <button className='button' onClick={downloadCV}>Descargar CV</button>
+    <aside className="cv-box">
+      <button className="button" onClick={downloadCV}>
+        Descargar CV
+      </button>
     </aside>
   );
 }

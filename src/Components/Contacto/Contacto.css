@@ -2,10 +2,10 @@
 
 /* Estilos para el formulario */
 .form-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
 }
 
 .label {
@@ -15,14 +15,13 @@
   left: 10px;
   top: 10px;
   background: #f6f6f6;
-  transition: .2s ease-out all;
+  transition: 0.2s ease-out all;
   font-weight: lighter;
   color: #323235;
-
 }
 
-.text-message .label{
-    top: 10px;
+.text-message .label {
+  top: 10px;
 }
 
 .error-message {
@@ -30,27 +29,27 @@
   font-size: 0.8em;
   margin-top: 5px;
 }
-.card-submit{
-    background: #3cb686;
-    border-radius: 50px;
-    width: 30%;
-    height: 2.3em;
-    align-self: center;
+.card-submit {
+  background: #3cb686;
+  border-radius: 50px;
+  width: 30%;
+  height: 2.3em;
+  align-self: center;
 }
-input[type="submit"] {
-    border: none;
-    background: none;
-    cursor: pointer;
-    border: none;
-    color: #f6f6f6;
-  }
+input[type='submit'] {
+  border: none;
+  background: none;
+  cursor: pointer;
+  border: none;
+  color: #f6f6f6;
+}
 
-.card-submit .button:hover>input[type="submit"] {
-    color: #323235;
+.card-submit .button:hover > input[type='submit'] {
+  color: #323235;
 }
-  
-input[type="text"],
-input[type="email"],
+
+input[type='text'],
+input[type='email'],
 textarea {
   width: 100%;
   padding: 10px;
@@ -61,12 +60,11 @@ textarea {
   background: #f6f6f6;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
+input[type='text']:focus,
+input[type='email']:focus,
 textarea:focus {
   border: 1px solid #3cb686;
 }
-
 
 /* Estilos para el formulario cuando está activo */
 .form-card.active {
@@ -86,40 +84,38 @@ textarea:focus {
 }
 
 .invalid-input,
-input[type="text"].invalid-input,
-input[type="email"].invalid-input,
+input[type='text'].invalid-input,
+input[type='email'].invalid-input,
 textarea.invalid-input {
-    border-color: #ff3c3c;
-    color: #ff3c3c;
+  border-color: #ff3c3c;
+  color: #ff3c3c;
 }
 
-label{
-    width: 100%;
-    position: relative;
-    margin: 10px;
+label {
+  width: 100%;
+  position: relative;
+  margin: 10px;
 }
 
 /* Estilos para el formulario cuando está activo */
 .form-card.active {
-    border: 2px solid #3cb686;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form-card.active label,
-  .form-card label input:not([type="submit"]):not([type="checkbox"]) {
-    font-size: 0.9em;
-  }
-  
-  
-  .form-card label input:not([type="submit"]):not([type="checkbox"]):focus {
-    border-color: #3cb686;
-  }
-
-.writing .label{
-    padding: 2px 5px;
-    border-radius: 5px;
-    top: -11px;
-    left: 0;
-    transform: scale(.7);
+  border: 2px solid #3cb686;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+.form-card.active label,
+.form-card label input:not([type='submit']):not([type='checkbox']) {
+  font-size: 0.9em;
+}
+
+.form-card label input:not([type='submit']):not([type='checkbox']):focus {
+  border-color: #3cb686;
+}
+
+.writing .label {
+  padding: 2px 5px;
+  border-radius: 5px;
+  top: -11px;
+  left: 0;
+  transform: scale(0.7);
+}
