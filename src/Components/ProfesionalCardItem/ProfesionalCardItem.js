@@ -1,8 +1,8 @@
 import './ProfesionalCardItem.css';
-import ExperienceFlow from './ExperienceFlow';
-import Experiience1 from './utils/TOC CERTIFICACION LABORAL.pdf';
-import Experiience2 from './utils/certificado multip.pdf';
-import { LogoGallery } from './LogoGallery';
+import ExperienceFlow from '../ExperienceFlow/ExperienceFlow';
+import Experiience1 from '../../utils/TOC CERTIFICACION LABORAL.pdf';
+import Experiience2 from '../../utils/certificado multip.pdf';
+import { LogoGallery } from '../LogoGallery/LogoGallery';
 
 
 const workExperience = [

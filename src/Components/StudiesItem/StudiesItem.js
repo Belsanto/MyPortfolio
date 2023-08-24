@@ -1,6 +1,6 @@
 import React from 'react';
 import './StudiesItem.css';
-import StudyItem from './StudyItem';
+import StudyItem from '../StudyItem/StudyItem';
 
 const StudiesItem = ({ studies }) => {
   return (

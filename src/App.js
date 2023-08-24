@@ -1,9 +1,9 @@
-import './App.css';
+import './Styles/App.css';
 import React, { useState, useEffect } from 'react';
-import { MainCard } from './MainCard';
-import { NavBarItem } from './NavBarItem';
-import Modal from './Modal';
-import { FormularioItem } from './FormularioItem';
+import { MainCard } from './Components/MainCard/MainCard';
+import { NavBarItem } from './Components/NavBarItem/NavBarItem';
+import Modal from './Components/Modal/Modal';
+import { FormularioItem } from './Components/FormularioItem/FormularioItem';
 
 const App = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

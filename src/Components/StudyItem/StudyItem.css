@@ -24,7 +24,7 @@
 .study-date {
 	display: flex;
 	align-items: center;
-	justify-content: start;
+	justify-content: flex-start;
 	width: calc(42% + 20px);
   	opacity: .8;
 }

@@ -1,6 +1,6 @@
-import SkillsContainer from './MySkillsItem';
+import SkillsContainer from '../MySkillsItem/MySkillsItem';
 import './PersonalCardItem.css';
-import BackgroungDogs from './utils/dogos.JPG';
+import BackgroungDogs from '../../utils/dogos.JPG';
 
 function PersonalCardItem() {
 

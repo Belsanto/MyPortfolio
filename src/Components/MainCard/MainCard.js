@@ -1,6 +1,6 @@
 import './MainCard.css';
-import { FirstCardItem } from './FirstCardItem';
-import { ContentCardItem } from './ContentCardItem';
+import { FirstCardItem } from '../FirstCardItem/FirstCardItem';
+import { ContentCardItem } from '../ContentCardItem/ContentCardItem';
 
 function MainCard() {
   return (

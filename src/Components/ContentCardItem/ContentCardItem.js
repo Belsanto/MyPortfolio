@@ -1,10 +1,10 @@
 import React from 'react';
 import './ContentCardItem.css';
-import { Home } from './Home';
-import { PersonalCardItem } from './PersonalCardItem';
-import { ProfesionalCardItem } from './ProfesionalCardItem';
-import { ProyectsCardItem } from './ProyectsCardItem';
-import { StudyCard } from './StudyCard';
+import { Home } from '../Home/Home';
+import { PersonalCardItem } from '../PersonalCardItem/PersonalCardItem';
+import { ProfesionalCardItem } from '../ProfesionalCardItem/ProfesionalCardItem';
+import { ProyectsCardItem } from '../ProyectsCardItem/ProyectsCardItem';
+import { StudyCard } from '../StudyCard/StudyCard';
 
 function ContentCardItem() {
   const shouldShow = false;

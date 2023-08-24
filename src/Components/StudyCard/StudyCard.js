@@ -1,6 +1,6 @@
-import StudiesItem from './StudiesItem';
+import StudiesItem from '../StudiesItem/StudiesItem';
 import './StudyCard.css';
-import SENA from './utils/certific.pdf';
+import SENA from '../../utils/certific.pdf';
 
 const studies = [
   {

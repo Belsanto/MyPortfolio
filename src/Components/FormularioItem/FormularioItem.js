@@ -1,4 +1,4 @@
-import Contacto from './Components/Contacto/Contacto';
+import Contacto from '../Contacto/Contacto';
 import './FormularioItem.css';
 
 function FormularioItem({onClose}) {

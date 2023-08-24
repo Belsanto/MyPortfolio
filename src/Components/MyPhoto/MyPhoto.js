@@ -1,5 +1,5 @@
 import './MyPhoto.css';
-import belsanto_photo from './utils/mydisign.png';
+import belsanto_photo from '../../utils/mydisign.png';
 
 function MyPhoto() {
   return (

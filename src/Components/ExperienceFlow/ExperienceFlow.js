@@ -1,7 +1,7 @@
 import React from 'react';
 import './ExperienceFlow.css';
 import {HiDownload} from 'react-icons/hi';
-import { TagsItem } from './TagsItem';
+import { TagsItem } from '../TagsItem/TagsItem';
 
 const ExperienceFlow = ({ experiences }) => {
   return (
