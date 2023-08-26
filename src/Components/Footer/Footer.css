@@ -1,7 +1,16 @@
-.footer {
-  padding: 0 1em;
+.footer p {
+	color: var(--color-gris);
 }
 
-.footer p {
-  color: #eceff1;
+
+@media (max-width: 830px) {
+	.footer{
+		position: fixed;
+		z-index: 4;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		height: 20px;
+		background: linear-gradient(to right, var(--color-verde), #3cb686, var(--color-azul));
+	}
 }

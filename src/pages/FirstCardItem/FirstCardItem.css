@@ -1,0 +1,23 @@
+.first-card {
+	width: 70%;
+    height: 100%;
+    color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 10px;
+}
+
+.first-card h1 {
+	color: var(--color-gris);
+}
+
+@media (max-width: 830px){
+    .first-card {
+        width: 100%;
+        height: auto;
+        flex-direction: initial;
+    }
+}

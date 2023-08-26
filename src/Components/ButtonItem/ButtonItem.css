@@ -1,5 +1,19 @@
 .cv-box {
-  min-width: 7.5em;
-  min-height: 2.9em;
-  margin: 10px;
+	min-width: 100%;
+	min-height: 2.9em;
+	margin: 10px;
+	display: grid;
+	place-content: center;
+}
+
+.cv-box .button{
+	width: 10em;
+	height: 3.5em;
+}
+
+
+@media (max-width: 830px) {
+	.cv-box{
+		padding: 0;
+	}
 }
