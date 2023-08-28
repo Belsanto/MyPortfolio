@@ -38,8 +38,10 @@ const ProyectsCardItem = () => {
 						key={proyect.id}
 						onMouseOver={() => setHoveredVideo(proyect)}
 						onMouseLeave={() => setHoveredVideo(null)}>
-						<h2>{proyect.position}</h2>
-						<p>{proyect.company}</p>
+						<a href={proyect.company}>
+							<h2>{proyect.position}</h2>
+						</a>
+						{/* <p>{proyect.company}</p> */}
 						<p>{`${proyect.startDate} - ${proyect.endDate}`}</p>
 						<p>{proyect.description}</p>
 						<figure className="card-video">
