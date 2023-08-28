@@ -91,7 +91,7 @@
 }
 
 .card-home section:nth-child(1) {
-	align-self: end;
+	align-self: flex-end;
 	position: relative;
 	transform: translate3d(0px, 0px, 0px) scale3d(1.4, 1.4, 1) rotateX(0deg) rotateY(0deg)
 		rotateZ(0deg) skew(0deg, 0deg);

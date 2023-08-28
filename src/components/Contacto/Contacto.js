@@ -17,6 +17,7 @@ const Contacto = ({ onClose }) => {
 			form.current.from_name.value = savedData.from_name || ""
 			form.current.message.value = savedData.message || ""
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
 	const sendEmail = async (e) => {

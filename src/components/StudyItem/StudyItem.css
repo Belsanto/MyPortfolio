@@ -74,7 +74,7 @@
 }
 
 .card-institute:nth-child(even) .study-date {
-	justify-content: end;
+	justify-content: flex-end;
 }
 
 .card-institute:nth-child(even) .card-info::after {
