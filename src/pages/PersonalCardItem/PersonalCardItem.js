@@ -53,7 +53,6 @@ function PersonalCardItem() {
 						habilidades técnicas y capacidad de adaptación, estaré encantado de ser considerado para
 						oportunidades en el sector.
 					</p>
-					<br />
 					{/*<p>Si quieres ponerte en contacto conmigo, por favor completa este pequeño <a href='#'>formulario</a></p>*/}
 				</aside>
 			</section>
