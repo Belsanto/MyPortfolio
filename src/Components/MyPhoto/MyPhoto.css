@@ -11,42 +11,43 @@
 
 .photo picture {
 	display: table-caption;
-    position: absolute;
+	position: absolute;
 	height: 12.5em;
 	aspect-ratio: 1;
-    border: 3px solid var(--color-negro);
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: var(--color-blanco);
-    z-index: 2;
-    transition: 0.3s ease-out all;
-    justify-self: self-start;
+	border: 3px solid var(--color-negro);
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: var(--color-blanco);
+	z-index: 2;
+	transition: 0.3s ease-out all;
+	justify-self: self-start;
 }
 
 .photo::before {
 	left: 0;
-    right: -10%;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    content: "";
-    position: absolute;
-    z-index: 1;
-    height: 100%;
-    aspect-ratio: 1/1;
-    background-image: linear-gradient(transparent 50%, rgb(255 255 255 / 0%) 50%), radial-gradient(circle, var(--color-negro) 25%, rgb(255 255 255 / 0%) 25%);
-    background-size: 10px 10px;
-    border-radius: 50%;
+	right: -10%;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	content: "";
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	aspect-ratio: 1/1;
+	background-image: linear-gradient(transparent 50%, rgb(255 255 255 / 0%) 50%),
+		radial-gradient(circle, var(--color-negro) 25%, rgb(255 255 255 / 0%) 25%);
+	background-size: 10px 10px;
+	border-radius: 50%;
 }
 
 .photo picture img {
 	position: absolute;
-    top: calc(5% * -3);
-    overflow: visible;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: 0.3s ease-out all;
+	top: calc(5% * -3);
+	overflow: visible;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	transition: 0.3s ease-out all;
 }
 .photo picture:hover {
 	box-shadow: 2px 2px 8px 0px #00000080;
@@ -61,7 +62,7 @@
 	.photo {
 		height: 11em;
 	}
-	.photo picture{
+	.photo picture {
 		height: 10.5em;
 	}
 }
@@ -74,7 +75,7 @@
 		margin: 0;
 		align-items: center;
 	}
-	.photo picture{
+	.photo picture {
 		height: 8em;
 	}
 
@@ -86,7 +87,7 @@
 }
 @media (max-width: 580px) {
 	/* Estilos para dispositivos móviles */
-	.photo picture{
+	.photo picture {
 		height: 5.5em;
 	}
 
@@ -95,7 +96,7 @@
 	}
 }
 @media (max-width: 390px) {
-	.photo picture{
+	.photo picture {
 		height: 3.5em;
 	}
 
