@@ -82,7 +82,7 @@
 	color: var(--color-azul);
 }
 
-@media (max-width: 820px) {
+@media (max-width: 820px), (max-height: 670px) {
 	.navbar {
 		width: 70vw;
 		position: fixed;

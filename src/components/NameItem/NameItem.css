@@ -1,7 +1,7 @@
 .presentation-box {
 	text-align: center;
 	width: 100%;
-	max-height: 9.375em;
+	height: 40%;
 }
 .presentation-box h1 {
 	font-size: 3.75rem;
@@ -9,7 +9,7 @@
 	overflow-wrap: normal;
 }
 
-.presentation-box h1 span {
+.presentation-box h1 span:nth-child(2) {
 	color: var(--color-negro);
 }
 .subtitle {
@@ -27,6 +27,12 @@
 	}
 }
 
+@media (max-height: 671px){
+	.presentation-box{
+		height: 30%;
+	}
+}
+
 @media (max-width: 1040px) {
 	/* Estilos para pantallas de tabletas peq*/
 	.presentation-box h1 {
@@ -34,12 +40,22 @@
 	}
 }
 
-@media (max-width: 820px) {
+@media (max-width: 820px), (max-height: 670px) {
+
 	.presentation-box {
 		width: 50%;
 		order: 2;
 	}
 	.subtitle {
 		padding: 0;
+	}
+}
+
+@media (max-width: 389px){
+	.presentation-box h1 span:nth-child(1) {
+		color: var(--color-negro);
+	}
+	.presentation-box h1 span:nth-child(2) {
+		display: none;
 	}
 }

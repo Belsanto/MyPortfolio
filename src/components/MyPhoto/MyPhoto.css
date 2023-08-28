@@ -67,7 +67,7 @@
 	}
 }
 
-@media (max-width: 820px) {
+@media (max-width: 820px), (max-height: 670px) {
 	/* Estilos para dispositivos móviles */
 	.photo {
 		width: 20%;

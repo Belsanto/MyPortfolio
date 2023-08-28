@@ -11,7 +11,7 @@
 	height: 3.5em;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 820px), (max-height: 670px) {
 	.cv-box {
 		padding: 0;
 		margin: 5px 0 0 0;

@@ -4,7 +4,7 @@
 	margin-left: 10px;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 820px), (max-height: 670px) {
 	.footer {
 		position: fixed;
 		z-index: 4;
