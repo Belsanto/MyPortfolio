@@ -39,7 +39,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://github.com/BelsantoUQ/MyPortfolio.git",
+  "homepage": "https://relaxed-blini-4f4c47.netlify.app",
   "devDependencies": {
     "eslint": "^8.47.0",
     "eslint-plugin-prettier": "^5.0.0",
