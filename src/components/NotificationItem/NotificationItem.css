@@ -1,0 +1,40 @@
+.notification {
+	position: fixed;
+	top: calc(5%);
+	left: calc(40%);
+	padding: 10px;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+	display: flex;
+	z-index: 6;
+}
+
+.notification.success {
+	background-color: #069aaca3;
+}
+
+.notification.error {
+	background-color: #f443367a;
+}
+
+.notification-message {
+	margin: 0;
+}
+
+.notification .close-button {
+	background: none;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	margin: 0 10px;
+}
+
+
+@media (max-width: 820px) {
+	.notification{
+		top: calc(15%);
+    	left: calc(28%);
+	}
+}

@@ -1,0 +1,24 @@
+.tags-container {
+	margin-top: 10px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tag {
+	background-color: #e0e0e0;
+	color: var(--color-negro);
+	font-size: 12px;
+	padding: 4px 10px;
+	margin: 4px;
+	border-radius: 20px;
+	font-weight: 600;
+}
+
+.tag:hover {
+	opacity: 0.8;
+}

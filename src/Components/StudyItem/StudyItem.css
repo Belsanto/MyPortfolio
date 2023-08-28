@@ -1,0 +1,99 @@
+.card-institute {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+	margin-top: 50px;
+	position: relative;
+}
+
+.card-institute::after {
+	content: "";
+	display: block;
+	width: 14px;
+	height: 14px;
+	border-radius: 100px;
+	background: var(--color-blanco);
+	border: 2px solid #1b3231;
+	position: absolute;
+	z-index: 2;
+	top: calc(50% - 9px);
+	left: calc(50% - 9px);
+}
+
+.study-date {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: calc(42% + 20px);
+	opacity: 0.8;
+}
+.card-info {
+	transition: all 0.2s ease-out;
+	width: 42%;
+	background: var(--color-gris);
+	position: relative;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-info:hover {
+	background-color: var(--color-blanco);
+	transform: scale(1.02);
+	box-shadow:
+		0 0 #e6ebef,
+		0 4px 24px rgba(0, 0, 0, 0.08);
+}
+.card-info::after {
+	content: "";
+	display: block;
+	border: 20px solid transparent;
+	border-left: 20px solid #fff;
+	position: absolute;
+	right: -50px;
+	top: calc(50% - 20px);
+}
+
+.card-info .card h2 {
+	width: 80%;
+}
+.card-info .card {
+	text-align: -webkit-center;
+	padding: 15px;
+}
+
+.card-info .card a svg {
+	transform: rotate(45deg);
+}
+
+.card-info .card a:hover > svg {
+	transform: scale(1.1) translate(10px, 10px);
+	padding-right: 5px;
+}
+
+.card-institute:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.card-institute:nth-child(even) .study-date {
+	justify-content: end;
+}
+
+.card-institute:nth-child(even) .card-info::after {
+	content: "";
+	border: 20px solid transparent;
+	border-right: 20px solid #fff;
+	right: initial;
+	left: -50px;
+}
+
+.card-institute:nth-child(even) .card-info .download-exp-icon svg {
+	left: 5%;
+}
+
+.no-link {
+	cursor: not-allowed;
+}
+
+.no-link:hover > svg {
+	fill: crimson;
+	transform: rotate(45deg);
+}

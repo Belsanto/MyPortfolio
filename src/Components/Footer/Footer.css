@@ -1,0 +1,18 @@
+.footer p {
+	color: var(--color-gris);
+	font-style: italic;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 820px) {
+	.footer{
+		position: fixed;
+		z-index: 4;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		height: 20px;
+		background: linear-gradient(to right, var(--color-verde), #3cb686, var(--color-azul));
+	}
+}

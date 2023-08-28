@@ -1,0 +1,115 @@
+.navbar {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.navbar nav {
+	box-shadow: 2px 2px 8px 0px #00000080;
+	padding: 0.3em 0.3em;
+	border-radius: 50px;
+	background-color: var(--color-blanco);
+	width: 100%;
+	margin-left: 40%;
+}
+
+.nav-list {
+	align-items: center;
+	justify-content: space-evenly;
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	width: 40px;
+	transition: 0.3s ease all;
+}
+
+.nav-icon {
+	padding: 0.3em;
+	width: 100%;
+	height: auto;
+	color: #b6b6b6;
+	transition: 0.5s ease all;
+}
+.nav-list:hover {
+	width: 3em;
+	height: 320px;
+}
+
+.nav-list a:hover > .nav-icon:hover {
+	transform: scale(1.6);
+	padding: 0.1em;
+	color: #3cb686;
+}
+
+.nav-list a {
+	display: flex;
+	align-items: center;
+	width: 2.1875em;
+	position: relative; /* Agregamos esta línea para posicionar correctamente el tooltip */
+}
+
+.nav-tooltip {
+	box-shadow: 2px 2px 8px 0px #00000080;
+	position: absolute;
+	left: 110%; /* Colocamos el tooltip a la derecha del icono */
+	transform: translateY(-50%);
+	background-color: var(--color-blanco);
+	color: #3cb686;
+	padding: 0.5em;
+	margin: 0.2em;
+	border-radius: 4px;
+	white-space: nowrap;
+	opacity: 0; /* Lo hacemos invisible por defecto */
+	pointer-events: none; /* Evitamos que el tooltip bloquee interacciones con el enlace */
+	transition: opacity 0.5s ease;
+}
+
+.nav-list a:hover .nav-tooltip {
+	opacity: 1; /* Mostramos el tooltip en hover */
+}
+
+.icon-active svg {
+	transform: scale(1.6);
+	padding: 0.1em;
+	fill: var(--color-azul);
+	cursor: not-allowed;
+	margin: 0.5em 0.1em;
+}
+
+.icon-active .nav-tooltip {
+	background-color: var(--color-blanco);
+	color: var(--color-azul);
+}
+
+
+@media (max-width: 820px) {
+	.navbar {
+		width: 70vw;
+		position: fixed;
+		z-index: 3;
+		top: 173px;
+	}
+	.navbar nav {
+		margin-left: 0;
+		padding: 0;
+		background-color: #0000003b;
+	}
+	.nav-list:hover {
+		height: auto;
+		width: auto;
+	}
+	.nav-list{
+		height: auto;
+		width: auto;
+		flex-direction: row;
+	}
+	.nav-icon{
+		color: var(--color-gris-oscuro);
+	}
+	.icon-active .nav-tooltip{
+		background-color: #ffffff54;
+		left: 0;
+		top: 120%;
+	}
+}
