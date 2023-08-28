@@ -37,6 +37,7 @@ const Contacto = ({ onClose }) => {
 			setNotification({ type: "success", message: "Correo enviado con éxito." })
 			setTimeout(function () {
 				onCloseNotification()
+				onClose()
 			}, 3000)
 		} catch (error) {
 			console.log(error.text)

@@ -17,3 +17,11 @@
 	left: calc(50% - 1px);
 	z-index: 1;
 }
+
+
+@media (max-width: 820px) {
+	.card-flow {
+		width: 100%;
+		overflow-wrap: break-word;
+	}
+}

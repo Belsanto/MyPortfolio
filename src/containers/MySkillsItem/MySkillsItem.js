@@ -1,6 +1,6 @@
 import React from "react"
 import { FaAngular, FaUnity, FaReact, FaJava, FaWordpress } from "react-icons/fa"
-import { BiLogoSpringBoot } from "react-icons/bi"
+import { AiOutlineConsoleSql } from "react-icons/ai"
 import { RiJavascriptLine } from "react-icons/ri"
 import { SiFastapi } from "react-icons/si"
 
@@ -10,7 +10,7 @@ const skillsData = [
 	{ icon: FaAngular, name: "Angular" },
 	{ icon: SiFastapi, name: "Python/ FastAPI" },
 	{ icon: FaUnity, name: "Unity" },
-	{ icon: BiLogoSpringBoot, name: "Spring Boot" },
+	{ icon: AiOutlineConsoleSql, name: "PL/SQL  MYSQL" },
 	{ icon: FaReact, name: "React" },
 	{ icon: FaJava, name: "Java" },
 	{ icon: RiJavascriptLine, name: "JavaScript" },

@@ -178,11 +178,21 @@
   }
   
   
-@media (max-width: 830px) {
+@media (min-width: 1600px) {
+	h1 {
+		font-size: 3em;
+	}
+}
+  
+@media (max-width: 820px) {
 	::-webkit-scrollbar-track {
 		border-radius: initial;
 	}
 	.card{
 		border-radius: initial;
+	}
+	.download-exp-icon svg{
+		width: 1.7em;
+		height: 1.7em;
 	}
 }

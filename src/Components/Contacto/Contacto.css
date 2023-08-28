@@ -122,3 +122,10 @@ label {
 	left: 0;
 	transform: scale(0.7);
 }
+
+
+@media (max-width: 820px) {
+	.card-submit{
+		width: 50%;
+	}
+}

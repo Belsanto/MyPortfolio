@@ -1,6 +1,5 @@
 .navbar {
 	position: relative;
-	height: 80vh;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -84,11 +83,33 @@
 }
 
 
-@media (max-width: 830px) {
+@media (max-width: 820px) {
 	.navbar {
+		width: 70vw;
 		position: fixed;
 		z-index: 3;
-		right: 20px;
-		top: 178px;
+		top: 173px;
+	}
+	.navbar nav {
+		margin-left: 0;
+		padding: 0;
+		background-color: #0000003b;
+	}
+	.nav-list:hover {
+		height: auto;
+		width: auto;
+	}
+	.nav-list{
+		height: auto;
+		width: auto;
+		flex-direction: row;
+	}
+	.nav-icon{
+		color: var(--color-gris-oscuro);
+	}
+	.icon-active .nav-tooltip{
+		background-color: #ffffff54;
+		left: 0;
+		top: 120%;
 	}
 }

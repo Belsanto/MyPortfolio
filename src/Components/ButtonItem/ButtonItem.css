@@ -12,8 +12,14 @@
 }
 
 
-@media (max-width: 830px) {
+@media (max-width: 820px) {
 	.cv-box{
+		padding: 0;
+		margin: 5px 0 0 0;
+	}
+	.cv-box .button{
+		width: 11em;
+		height: 2em;
 		padding: 0;
 	}
 }

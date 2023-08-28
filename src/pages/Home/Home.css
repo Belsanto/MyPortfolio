@@ -158,3 +158,12 @@
 		font-size: small;
 	}
 }
+
+
+@media (max-width: 820px) {
+
+	.card-home section h2 {
+		font-size: .6em;
+	}
+
+}

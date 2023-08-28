@@ -1,6 +1,7 @@
 import StudiesItem from "../../containers/StudiesItem/StudiesItem"
 import "./StudyCard.css"
 import SENA from "../../utils/certific.pdf"
+import { LogoGallery } from "../../components/LogoGallery/LogoGallery"
 
 const studies = [
 	{
@@ -38,6 +39,10 @@ function StudyCard() {
 						Estudios <br />y Certificados
 					</h1>
 				</div>
+				<aside>
+					<h2>Algunas de las tecnologías y herrammientas con las que me siento familiarizado: </h2>
+					<LogoGallery />
+				</aside>
 				<StudiesItem studies={studies} />
 			</div>
 		</section>

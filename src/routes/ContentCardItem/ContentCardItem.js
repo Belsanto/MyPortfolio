@@ -13,7 +13,7 @@ function ContentCardItem() {
 	return (
 		<section className="card content-card">
 			<Routes>
-				<Route path="/MyPortfolio" element={<Home />} />
+				<Route path="/*" element={<Home />} />
 				<Route path="/aboutme" element={<PersonalCardItem />} />
 				<Route path="/work-experience" element={<ProfesionalCardItem />} />
 				<Route path="/study" element={<StudyCard />} />

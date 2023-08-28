@@ -9,7 +9,6 @@ import { FaUserAstronaut, FaUserGraduate, FaUserTie } from "react-icons/fa"
 import { HiHome, HiMail } from "react-icons/hi"
 import { BrowserRouter } from "react-router-dom"
 //TODO estilos responsive de 480px a 280px
-//TODO desplegar y comprimir barra de navegación
 const navLinks = [
 	{
 		id: "home",

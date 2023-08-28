@@ -13,7 +13,7 @@ function NavBarItem({ onOpenModal, navLinks }) {
 						<li key={id}>
 							<Link
 								className={id === activeLink && id !== "contact" ? "icon-active" : ""}
-								to={id !== "home" ? `/${id}` : "/MyPortfolio"}
+								to={id !== "home" ? `/${id}` : "/"}
 								title={text}
 								onClick={(e) => {
 									if (id === "contact") {
