@@ -29,5 +29,6 @@
 		align-items: flex-end;
 		margin-top: 0;
 		order: 4;
+		align-self: flex-start;
 	}
 }
