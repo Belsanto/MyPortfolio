@@ -111,4 +111,9 @@
 		left: 0;
 		top: 120%;
 	}
+	.nav-tooltip {
+		left: 10%;
+		top: 140%;
+	}
+	
 }
