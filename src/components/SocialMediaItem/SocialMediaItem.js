@@ -3,6 +3,7 @@ import React from "react"
 import { ImGoogle2, ImGithub } from "react-icons/im"
 import { RiWhatsappFill } from "react-icons/ri"
 import { BsLinkedin } from "react-icons/bs"
+import { FaItchIo } from "react-icons/fa"
 
 class MediaItem extends React.Component {
 	render() {
@@ -41,6 +42,12 @@ class MediaItem extends React.Component {
 						rel="noopener noreferrer">
 						{" "}
 						<BsLinkedin fill="white" className="Icon-svg" />
+					</a>
+				</span>
+				<span>
+					<a href={"https://belsanto.itch.io/"} target="_blank" rel="noopener noreferrer">
+						{" "}
+						<FaItchIo fill="white" className="Icon-svg" />
 					</a>
 				</span>
 			</aside>
