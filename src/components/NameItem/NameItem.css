@@ -20,13 +20,6 @@
 	letter-spacing: -0.025em;
 }
 
-@media (max-width: 1300px) {
-	/* Estilos para pantallas de tabletas med*/
-	.presentation-box h1 {
-		font-size: 3em; /*  ajustar el tamaño del nombre según el tamaño de la pantalla*/
-	}
-}
-
 @media (max-height: 671px){
 	.presentation-box{
 		height: 30%;
@@ -38,20 +31,39 @@
 	.presentation-box h1 {
 		font-size: 1.75rem;
 	}
+	.subtitle{
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 1260px) {
+	/* Estilos para pantallas de tabletas peq*/
+	.presentation-box h1 {
+		font-size: 2.75rem;
+	}
+	.subtitle{
+		font-size: 1.3rem;
+	}
 }
 
 @media (max-width: 820px), (max-height: 670px) {
 
 	.presentation-box {
-		width: 50%;
 		order: 2;
-	}
-	.subtitle {
-		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		align-self: self-start;
+		margin-top: 1%;
+		justify-content: center;
 	}
 }
 
 @media (max-width: 389px){
+	
+	.presentation-box {
+	
+		margin-top: 5%;
+	}
 	.presentation-box h1 span:nth-child(1) {
 		color: var(--color-negro);
 	}

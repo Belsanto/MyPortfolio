@@ -18,7 +18,7 @@
 @media (max-width: 820px), (max-height: 670px) {
 	.first-card {
 		width: 100%;
-		height: auto;
 		flex-direction: initial;
+		padding: 0;
 	}
 }

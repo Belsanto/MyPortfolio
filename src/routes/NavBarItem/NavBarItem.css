@@ -87,7 +87,7 @@
 		width: 70vw;
 		position: fixed;
 		z-index: 3;
-		top: 173px;
+		top: 25vh;
 	}
 	.navbar nav {
 		margin-left: 0;
@@ -116,4 +116,10 @@
 		top: 140%;
 	}
 	
+}
+
+@media (max-width: 389px){
+	.navbar {
+		top: 20vh;
+	}
 }
