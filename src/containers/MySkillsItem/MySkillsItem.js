@@ -11,11 +11,11 @@ const skillsData = [
 	{ icon: FaAngular, name: "Angular" },
 	{ icon: SiFastapi, name: "Python/ FastAPI" },
 	{ icon: FaUnity, name: "Unity" },
-	{ icon: AiOutlineConsoleSql, name: "PL/SQL  MYSQL" },
+	{ icon: AiOutlineConsoleSql, name: "PL/SQL  MYSQL PHPMyAdmin" },
 	{ icon: FaReact, name: "React" },
 	{ icon: BiLogoSpringBoot, name: "Java / SpringBoot" },
 	{ icon: RiJavascriptLine, name: "JavaScript" },
-	{ icon: FaWordpress, name: "WordPress" },
+	{ icon: FaWordpress, name: "WordPress / PHP" },
 ]
 
 const MySkillsItem = () => {
