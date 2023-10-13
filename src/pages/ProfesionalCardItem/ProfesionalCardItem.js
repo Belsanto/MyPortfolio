@@ -14,7 +14,7 @@ const workExperience = [
 		description:
 			"Contribuí en la creación, integración y corrección de modulos en la parte administrativa de un software clínico en APEX(Oracle Application Express) aplicando tecnicas avanzadas de consultas y creación de funciones y/o procedimientos con PL/SQL, tambíen contribuí en un proyecto en JAVA en la creación de servicios SOAP. También brindé asesoramiento y acompañamiento a los usuarios cuando estos presentaban un error ya sea de código y de manejo del software. Además llevaba a cabo pruebas manuales exhaustivas en los módulos que desarrollaba y/o modificaba, identificando y corrigiendo defectos antes de su liberación, esto garantizaba la calidad y funcionalidad del software.",
 		certify: Experiience1,
-		skills: ["JavaScript", "CSS", "Oracle SQL", "APEX", "PL/SQL", "Java", "SOAP"],
+		skills: ["JavaScript/ HTML/ CSS", "CSS", "Oracle SQL", "APEX", "PL/SQL", "Java", "SOAP"],
 	},
 	{
 		id: 2,
