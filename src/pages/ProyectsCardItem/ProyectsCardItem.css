@@ -19,7 +19,7 @@
 	background: var(--color-gris);
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	cursor: default;
-    pointer-events: none;
+	pointer-events: none;
 }
 .proyect-card:hover {
 	background-color: var(--color-blanco);
@@ -73,21 +73,21 @@
 	display: none;
 }
 
-.proyect-repo{
+.proyect-repo {
 	position: absolute;
 	right: 10%;
-    pointer-events: all;
+	pointer-events: all;
 	transition: 0.3s ease-in all;
 }
-.proyect-repo:hover{
+.proyect-repo:hover {
 	transform: scale(1.4);
 }
-.itch-card{
+.itch-card {
 	margin-top: 10px;
 	width: 80px;
 	aspect-ratio: 3/2;
 	object-fit: contain;
-    pointer-events: all;
+	pointer-events: all;
 	cursor: pointer;
 }
 
@@ -107,6 +107,6 @@
 	color: transparent;
 }
 
-.project-description{
+.project-description {
 	margin-top: 2em;
 }
