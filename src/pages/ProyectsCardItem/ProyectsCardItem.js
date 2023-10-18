@@ -17,7 +17,7 @@ const proyects = [
 		date: "2023-10",
 		tag: itch,
 		description:
-			"Diseño de la UI y de los personajes, programación de una clase nodo y una clase grafo para controlar el movimiento del personaje.",
+			"I designed the user interface (UI), including layout and visual styling. I implemented data persistence for saving player progress and facilitated character selection through an intuitive system. Additionally, I developed a node class and a graph class to control character movement, ensuring smooth and logical navigation within the game environment. I used Unity and C# to deliver an immersive and high-quality gaming experience.",
 		video: vidMia,
 		thumbnails: imgMia,
 		skills: ["Unity", "C#", "Agile", "UI/UX Design"],
@@ -30,7 +30,7 @@ const proyects = [
 		date: "2023-9",
 		tag: itch,
 		description:
-			"Programación de mecánicas de movimientos y de powerUps, diseño del mundo y del personaje.",
+			"I spearheaded the implementation of movement mechanics and power-ups in a project, enhancing gameplay and user experience. I made substantial contributions to world design and character conceptualization, ensuring a seamless visual and narrative cohesion within the game environment. I showcased a strong programming skill set, utilizing languages like C# and Unity to ensure smooth performance and intuitive interaction. Additionally, I crafted particle effects to complement art and design, thereby ensuring aesthetic consistency and player immersion. My emphasis on usability and creativity proved pivotal for the overall success of the project.",
 		video: vidQuantum,
 		thumbnails: imgQuantum,
 		skills: ["Unity", "C#", "Agile"],

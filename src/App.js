@@ -17,6 +17,12 @@ const navLinks = [
 		active: false,
 	},
 	{
+		id: "projects",
+		icon: <ImBooks className="nav-icon" />,
+		text: "Projects",
+		active: false,
+	},
+	{
 		id: "aboutme",
 		icon: <FaUserAstronaut className="nav-icon" />,
 		text: "About Me",
@@ -33,12 +39,6 @@ const navLinks = [
 		icon: <FaUserGraduate className="nav-icon" />,
 		text: "Study",
 		active: true,
-	},
-	{
-		id: "projects",
-		icon: <ImBooks className="nav-icon" />,
-		text: "Projects",
-		active: false,
 	},
 	{
 		id: "contact",
@@ -70,7 +70,7 @@ const App = () => {
 				<MainCard />
 				<NavBarItem onOpenModal={handleOpenModal} navLinks={navLinks} />
 			</BrowserRouter>
-			<Modal isOpen={isModalOpen} onClose={handleCloseModal} title="Formulario de Contacto">
+			<Modal isOpen={isModalOpen} onClose={handleCloseModal} title="Contact Form">
 				<FormularioItem onClose={handleCloseModal} />
 			</Modal>
 		</main>

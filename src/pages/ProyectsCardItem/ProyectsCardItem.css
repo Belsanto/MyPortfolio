@@ -77,13 +77,18 @@
 	position: absolute;
 	right: 10%;
     pointer-events: all;
+	transition: 0.3s ease-in all;
 }
-
+.proyect-repo:hover{
+	transform: scale(1.4);
+}
 .itch-card{
 	margin-top: 10px;
 	width: 80px;
 	aspect-ratio: 3/2;
 	object-fit: contain;
+    pointer-events: all;
+	cursor: pointer;
 }
 
 .project-tittle {

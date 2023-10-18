@@ -60,8 +60,8 @@ function Home() {
 				</section>
 				<section className="card-motivation-words">
 					<p>
-						...Journeying through the realm of software and technology, I have encountered numerous
-						challenges. Explore some of them
+						...Hi! Journeying through the realm of software and technology, I have encountered
+						numerous challenges. Explore some of them
 						<Link to={"/projects"}>
 							<span className="lil-link"> here</span>
 						</Link>
