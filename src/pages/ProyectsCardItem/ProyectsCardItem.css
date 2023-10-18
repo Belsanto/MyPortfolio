@@ -4,15 +4,40 @@
 	align-items: center;
 	padding: 5px;
 	width: 100%;
-	height: 100%;
 }
 
 .proyect-card {
+	position: relative;
+	border-radius: 15px;
 	border: 1px solid #ccc;
-	padding: 20px;
+	padding: 0px 20px;
+	padding-top: 20px;
 	margin: 10px;
 	width: 80%;
 	max-width: 600px;
+	transition: 0.3s ease-in-out all;
+	background: var(--color-gris);
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	cursor: default;
+    pointer-events: none;
+}
+.proyect-card:hover {
+	background-color: var(--color-blanco);
+	transform: scale(1.02);
+	box-shadow:
+		0 0 #e6ebef,
+		0 4px 24px rgba(0, 0, 0, 0.08);
+	background: linear-gradient(#ffffff56, #0000006b);
+}
+.project-skills {
+	transition: 0.8s ease all;
+	transform: translateX(-5px) translateY(-35px);
+	opacity: 0.4;
+}
+.proyect-card:hover > .project-skills {
+	display: block;
+	transform: translateX(-50px) translateY(-120px);
+	opacity: 1;
 }
 
 .proyect-card h2 {
@@ -31,18 +56,57 @@
 }
 
 .card-video {
-	width: 500px;
-	height: 400px;
+	width: auto;
+	height: 23rem;
 	padding: 0.3em;
-	margin: 1em;
+	pointer-events: all;
 }
 .card-video img {
-	width: auto;
-	height: 100%;
+	width: 100%;
+	aspect-ratio: 3/2;
+	object-fit: contain;
 }
 .proyect-video {
 	width: 100%;
 	height: 100%;
 	cursor: pointer;
 	display: none;
+}
+
+.proyect-repo{
+	position: absolute;
+	right: 10%;
+    pointer-events: all;
+	transition: 0.3s ease-in all;
+}
+.proyect-repo:hover{
+	transform: scale(1.4);
+}
+.itch-card{
+	margin-top: 10px;
+	width: 80px;
+	aspect-ratio: 3/2;
+	object-fit: contain;
+    pointer-events: all;
+	cursor: pointer;
+}
+
+.project-tittle {
+	background: linear-gradient(
+		to right,
+		var(--color-gris-oscuro),
+		var(--color-negro),
+		var(--color-azul),
+		var(--color-verde),
+		var(--color-azul),
+		var(--color-negro),
+		var(--color-gris-oscuro)
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.project-description{
+	margin-top: 2em;
 }

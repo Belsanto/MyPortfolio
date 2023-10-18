@@ -1,5 +1,6 @@
 import "./StudyItem.css" // Import your CSS file
 import { BsArrowUpRight } from "react-icons/bs"
+import ImageDisplay from ".././ImageDisplay/ImageDisplay"
 
 const StudyItem = ({ study, studyIndex }) => {
 	const handleLinkClick = (e) => {
@@ -21,10 +22,11 @@ const StudyItem = ({ study, studyIndex }) => {
 					</a>
 					<h2>{study.title}</h2>
 					<b>{study.institute}</b>
+					<ImageDisplay imageUrl={study.img} altText={study.title} />
 				</article>
 			</div>
 			<h3 className="study-date">
-				{study.startDate} • {study.endDate ? study.endDate : "En curso"}
+				{study.startDate} • {study.endDate ? study.endDate : "Ongoing Till 2024"}
 			</h3>
 		</div>
 	)

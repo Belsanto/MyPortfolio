@@ -57,7 +57,7 @@
 	cursor: pointer;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1060px) {
 	/* Estilos para pantallas de tabletas peq*/
 	.photo {
 		height: 11em;
@@ -67,7 +67,7 @@
 	}
 }
 
-@media (max-width: 820px) {
+@media (max-width: 820px), (max-height: 670px) {
 	/* Estilos para dispositivos móviles */
 	.photo {
 		width: 20%;

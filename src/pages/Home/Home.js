@@ -1,8 +1,24 @@
-import React, { useEffect } from "react"
-import "./Home.css"
+import { Link } from "react-router-dom"
+import React, { useEffect, useState } from "react"
+import "./Home.css" // Asegúrate de especificar la ruta correcta a
+import Tittles from "../../components/Tittles/Tittles"
+
+const titles = [
+	"Software Developer.                 ",
+	"Game Programmer.                    ",
+	"Systems and Computer Engineer.      ",
+	"Unity Developer.                    ",
+	"Game Developer.                     ",
+]
 
 function Home() {
+	const [i, setI] = useState(0)
+
 	useEffect(() => {
+		const interval = setInterval(() => {
+			setI((prevI) => (prevI + 1) % titles.length)
+		}, 2800)
+
 		const parallax = (e) => {
 			document.querySelectorAll(".particle").forEach((particle) => {
 				const speed = parseFloat(particle.getAttribute("data-speed"))
@@ -20,6 +36,7 @@ function Home() {
 
 		return () => {
 			document.removeEventListener("mousemove", parallax)
+			clearInterval(interval)
 		}
 	}, [])
 
@@ -35,20 +52,20 @@ function Home() {
 					<div data-speed="-7" data-rotation="-17" className="particle dot-6"></div>
 					<div data-speed="-5" data-rotation="26" className="particle dot-7"></div>
 					<div data-speed="4" data-rotation="-14" className="particle dot-8"></div>
-					<h1>
+					<h1 className="big-tittle">
 						SANTIAGO VELANDIA
 						<br /> GALLO
 					</h1>
-					<h2>
-						<span className="typing-text">
-							Bienvenid@ a mi portfolio como desarrollador de software.
-						</span>
-					</h2>
+					<Tittles tittle={titles[i]} />
 				</section>
 				<section className="card-motivation-words">
 					<p>
-						...Recorriendo el camino del software y la tecnología, me he encontrado con numerosos
-						desafíos. Explora algunos de ellos aquí...
+						...Hi! Journeying through the realm of software and technology, I have encountered
+						numerous challenges. Explore some of them
+						<Link to={"/projects"}>
+							<span className="lil-link"> here</span>
+						</Link>
+						...
 					</p>
 				</section>
 			</aside>

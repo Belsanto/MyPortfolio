@@ -10,7 +10,7 @@ const ExperienceFlow = ({ experiences }) => {
 				<article
 					className={`card experience-card ${index % 2 === 0 ? "left" : "right"}`}
 					key={experience.id}>
-					<article className="card">
+					<article>
 						<a
 							href={experience.certify}
 							className="download-exp-icon"
@@ -18,12 +18,24 @@ const ExperienceFlow = ({ experiences }) => {
 							rel="noopener noreferrer">
 							<HiDownload />
 						</a>
-						<h2>{experience.position}</h2>
-						<b>{experience.company}</b>
+						<b>{experience.position}</b>
+						<h2>{experience.company}</h2>
 						<p className="date-card">
 							{`${experience.startDate} • ${experience.endDate}`} <span>({experience.time})</span>
 						</p>
-						<p>{experience.description}</p>
+						<ul className="task-list">
+							{experience.description.split("-").map((line, i) => {
+								const trimmedLine = line.trim()
+								if (trimmedLine) {
+									return (
+										<li>
+											<p key={i}>{trimmedLine}</p>
+										</li>
+									)
+								}
+								return null
+							})}
+						</ul>
 						<TagsItem abilities={experience.skills} />
 					</article>
 				</article>

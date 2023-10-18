@@ -1,0 +1,13 @@
+/* ImageDisplay.css */
+.image-display {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	margin-top: 20px;
+}
+
+.image {
+	max-width: 100%;
+	max-height: 100%;
+}

@@ -1,7 +1,7 @@
 // ButtonItem.js
 import React from "react"
 import "./ButtonItem.css"
-import CV_PDF from "../../utils/SANTIAGO VELANDIA GALLO_CV.pdf"
+import CV_PDF from "../../utils/pdf/SANTIAGO VELANDIA GALLO_CV.pdf"
 
 function downloadCV() {
 	// Simulamos la descarga del CV en una nueva pestaña
@@ -12,7 +12,7 @@ function ButtonItem() {
 	return (
 		<aside className="cv-box">
 			<button className="button" onClick={downloadCV}>
-				Descargar CV
+				Resume
 			</button>
 		</aside>
 	)

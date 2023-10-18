@@ -5,6 +5,7 @@
 }
 
 .logo-gallery {
+	background: #146c7886;
 	display: flex;
 	animation: knowledge-bar 25s linear infinite;
 	-webkit-animation: knowledge-bar 25s linear infinite;

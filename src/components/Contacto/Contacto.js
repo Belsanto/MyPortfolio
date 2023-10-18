@@ -17,6 +17,7 @@ const Contacto = ({ onClose }) => {
 			form.current.from_name.value = savedData.from_name || ""
 			form.current.message.value = savedData.message || ""
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
 	const sendEmail = async (e) => {
@@ -60,7 +61,7 @@ const Contacto = ({ onClose }) => {
 			)}
 			<form className="form-card" ref={form} onSubmit={sendEmail}>
 				<label htmlFor="user_name">
-					<span className="label">Nombre</span>
+					<span className="label">Name</span>
 					<input
 						id="user_name"
 						type="text"
@@ -72,7 +73,7 @@ const Contacto = ({ onClose }) => {
 					/>
 				</label>
 				<label htmlFor="user_email">
-					<span className={`label ${!emailValid ? "writing" : ""}`}>Correo</span>
+					<span className={`label ${!emailValid ? "writing" : ""}`}>Email</span>
 					<input
 						id="user_email"
 						type="email"
@@ -86,7 +87,7 @@ const Contacto = ({ onClose }) => {
 					{!emailValid && <p className="error-message">Por favor, ingresa un correo válido.</p>}
 				</label>
 				<label htmlFor="from_name">
-					<span className="label">Asunto</span>
+					<span className="label">Subject</span>
 					<input
 						id="from_name"
 						type="text"
@@ -101,7 +102,7 @@ const Contacto = ({ onClose }) => {
 					className={`text-message
 					${form.current && form.current.message.value !== "" ? "writing" : ""}`}
 					htmlFor="message">
-					<span className="label">Mensaje</span>
+					<span className="label">Message</span>
 					<textarea
 						id="message"
 						name="message"
@@ -113,7 +114,7 @@ const Contacto = ({ onClose }) => {
 				</label>
 				<div className="card-submit">
 					<button className="button">
-						<input id="" type="submit" />
+						<input value="Send" type="submit" />
 					</button>
 				</div>
 			</form>

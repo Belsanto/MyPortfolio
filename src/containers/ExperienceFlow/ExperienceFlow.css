@@ -36,16 +36,19 @@
 		0 0 #e6ebef,
 		0 4px 24px rgba(0, 0, 0, 0.08);
 }
+
 .experience-card.left {
-	align-self: flex-start;
+	align-self: center;
 }
 
 .experience-card.right {
-	align-self: flex-end;
+	align-self: center;
 }
 
 .experience-card h2 {
-	margin: 0;
+	margin: 5px 0;
+	padding: 0;
+	color: var(--color-gris-oscuro);
 }
 
 .experience-card p {
@@ -67,8 +70,15 @@
 	font-size: 0.8em;
 	opacity: 0.5;
 }
-
-@media (max-width: 820px) {
+.task-list {
+	padding-inline-start: 40px;
+}
+.task-list li {
+	list-style: circle;
+	margin: 0 0.5rem 0 0;
+	color: var(--color-azul);
+}
+@media (max-width: 820px), (max-height: 670px) {
 	.experience-card {
 		width: 100%;
 	}

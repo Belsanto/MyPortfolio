@@ -17,7 +17,7 @@ function ContentCardItem() {
 				<Route path="/aboutme" element={<PersonalCardItem />} />
 				<Route path="/work-experience" element={<ProfesionalCardItem />} />
 				<Route path="/study" element={<StudyCard />} />
-				<Route path="/proyects" element={<ProyectsCardItem />} />
+				<Route path="/projects" element={<ProyectsCardItem />} />
 			</Routes>
 			{/* {shouldShow && <Home />}
 			{shouldShow && <PersonalCardItem />}

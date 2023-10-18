@@ -1,6 +1,6 @@
 import SkillsContainer from "../../containers/MySkillsItem/MySkillsItem"
 import "./PersonalCardItem.css"
-import BackgroungDogs from "../../utils/dogos.JPG"
+import BackgroungDogs from "../../utils/img/dogos.JPG"
 
 function PersonalCardItem() {
 	return (
@@ -8,19 +8,18 @@ function PersonalCardItem() {
 			<section className="card card-personal">
 				<aside className="card-text">
 					<section className="card-title">
-						<h1>Sobre mi:</h1>
+						<h1 className="big-tittle">About me:</h1>
 					</section>
 					<p>
-						<span>¡Hola de nuevo!👋</span>
+						<span>Hello again!👋</span>
 					</p>
 				</aside>
 				<aside className="card-window" />
 				<aside className="card-text">
 					<p>
-						Soy un apasionado de la tecnología, tecnico en programación de software y estudiante de
-						ingenieria de sistemas y computación, con experiencia en el desarrollo de software y
-						soporte técnico. Mi pasión, además de la tecnología, son los videojuegos, la naturaleza
-						y los animales.
+						I am passionate about technology and game development in Unity, technically skilled in
+						software programming, and currently studying systems and computer engineering. I have
+						experience in software development and technical support.
 					</p>
 					<div>
 						<h3>
@@ -29,31 +28,31 @@ function PersonalCardItem() {
 						<SkillsContainer />
 					</div>
 					<p>
-						Hoy por hoy me encuentro cursando los últimos dos semestres en ingeniería de sistemas y
-						computación en la jornada nocturna. Cuento también con una sólida formación en HTML,
-						CSS, PL/SQL y bases de datos SQL. Además, tengo conocimientos en métodos y técnicas de
-						pruebas y calidad de software así como familiaridad con el uso herramientas de
-						automatización de pruebas.
+						I have extensive experience in developing comprehensive software for customer service
+						queue management and administrative projects, utilizing technologies such as Java, PHP,
+						and PL/SQL. My expertise lies in problem-solving and implementing testing methods and
+						software quality techniques, along with knowlenge in some automation testing tools.
+						Currently, I am in the final two semesters of my Systems and Computer Engineering
+						degree, pursuing my studies on a part-time basis.
 					</p>
 				</aside>
 				<aside className="card-window" />
 				<aside className="card-text">
 					<p>
-						Gracias por visitar mi portafolio web, aquí podrás conocer más de mi evolución como
-						profesional, proyectos destacados y cómo mi pasión por la tecnología se ha traducido en
-						resultados concretos. ¡Espero que disfrutes explorando mi trayectoria y habilidades!
+						Thank you for visiting my web portfolio. Here, you can learn more about my professional
+						evolution, notable projects, and how my passion for technology has translated into
+						tangible results. I hope you enjoy exploring my journey and skills!
 					</p>
 					<h3 className="search-job">
 						{" "}
-						<b>ACTUALMENTE BUSCO AMPLIAR MI CAMPO LABORAL</b>
+						<b>CURRENTLY SEEKING TO EXPAND MY PROFESSIONAL HORIZONS.</b>
 					</h3>
 					<p>
-						Estoy entusiasmado por seguir creciendo profesionalmente en el campo de la tecnología y
-						contribuir al desarrollo de soluciones innovadoras. Si buscas a alguien apasionado, con
-						habilidades técnicas y capacidad de adaptación, estaré encantado de ser considerado para
-						oportunidades en el sector.
+						I am excited to continue growing in the field of software and/or video game development
+						and contribute with creative and innovative solutions. If you are looking for a
+						passionate professional with technical skills in software or Unity development, please
+						do not hesitate to contact me.
 					</p>
-					<br />
 					{/*<p>Si quieres ponerte en contacto conmigo, por favor completa este pequeño <a href='#'>formulario</a></p>*/}
 				</aside>
 			</section>
