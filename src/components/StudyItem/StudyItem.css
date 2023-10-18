@@ -98,8 +98,7 @@
 	transform: rotate(45deg);
 }
 
-@media (max-width: 820px), (max-height: 670px)
-{
+@media (max-width: 820px), (max-height: 670px) {
 	.card-info {
 		border-radius: 15px;
 	}

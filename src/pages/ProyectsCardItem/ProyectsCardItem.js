@@ -1,28 +1,39 @@
 import React, { useState } from "react"
 import "./ProyectsCardItem.css"
-import video from "../../utils/videos/video1.mp4"
-import imagen1 from "../../utils/img/viticor.jpg"
+import vidMia from "../../utils/videos/video1.mp4"
+import imgMia from "../../utils/img/mia.jpg"
+import vidQuantum from "../../utils/videos/quantum.mp4"
+import imgQuantum from "../../utils/img/quantum.jpg"
+import itch from "../../utils/img/itchio.png"
+import { TagsItem } from "../../components/TagsItem/TagsItem"
+import { PiGithubLogoDuotone } from "react-icons/pi"
 
 const proyects = [
 	{
 		id: 1,
-		position: "News Feed (video no disponible aun)",
-		company: "https://glittering-kelpie-19c64e.netlify.app/home",
-		startDate: "2022-07-01",
-		endDate: "2022-05-28",
-		description: "Consumo de Api de noticias de RepidApi usando Angular",
-		video: video,
-		thumbnails: imagen1,
+		name: "Mia's Forgettable Date Night",
+		url: "https://belsanto.itch.io/mias-forgettable-date-night",
+		git: "https://github.com/BelsantoUQ/RebellionJam/tree/Persistence-Dev",
+		date: "2023-10",
+		tag: itch,
+		description:
+			"Diseño de la UI y de los personajes, programación de una clase nodo y una clase grafo para controlar el movimiento del personaje.",
+		video: vidMia,
+		thumbnails: imgMia,
+		skills: ["Unity", "C#", "Agile", "UI/UX Design"],
 	},
 	{
 		id: 2,
-		position: "Chat con Angular (video no disponible aun)",
-		company: "https://jade-semolina-b8fa2c.netlify.app/home",
-		startDate: "2022-11-15",
-		endDate: "2022-10-31",
-		description: "Consumo de una api de chat",
-		video: video,
-		thumbnails: imagen1,
+		name: "Quantum Race: Dash Through the Uncertainty",
+		url: "https://luisdo.itch.io/quantum-race",
+		git: "https://github.com/BelsantoUQ/GameJamTeam5/tree/Santiago",
+		date: "2023-9",
+		tag: itch,
+		description:
+			"Programación de mecánicas de movimientos y de powerUps, diseño del mundo y del personaje.",
+		video: vidQuantum,
+		thumbnails: imgQuantum,
+		skills: ["Unity", "C#", "Agile"],
 	},
 ]
 
@@ -31,19 +42,34 @@ const ProyectsCardItem = () => {
 
 	return (
 		<section className="card card-section">
-			<div className=" proyect-flow">
+			<div className="card-title">
+				<h1 className="big-tittle">
+					Main <br /> Projects
+				</h1>
+			</div>
+			<div className="proyect-flow">
 				{proyects.map((proyect, index) => (
-					<div
+					<a
+						href={proyect.url}
+						target="_blank"
+						rel="noopener noreferrer"
 						className="proyect-card"
 						key={proyect.id}
 						onMouseOver={() => setHoveredVideo(proyect)}
 						onMouseLeave={() => setHoveredVideo(null)}>
-						<a href={proyect.company}>
-							<h2>{proyect.position}</h2>
+						<h1 className="project-tittle">{proyect.name}</h1>
+						<img className="itch-card" src={proyect.tag} alt={`Logo ${index}`} />
+						<br />
+						{/* <p>{proyect.url}</p> */}
+						<b className="project-date">{`${proyect.date}`}</b>
+						<a
+							href={proyect.git}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="proyect-repo">
+							<PiGithubLogoDuotone fill="white" className="Icon-svg" />
 						</a>
-						{/* <p>{proyect.company}</p> */}
-						<p>{`${proyect.startDate} - ${proyect.endDate}`}</p>
-						<p>{proyect.description}</p>
+						<p className="project-description">{proyect.description}</p>
 						<figure className="card-video">
 							<img src={proyect.thumbnails} alt={`Logo ${index}`} />
 							<video
@@ -54,7 +80,10 @@ const ProyectsCardItem = () => {
 								muted
 							/>
 						</figure>
-					</div>
+						<section className="project-skills">
+							<TagsItem abilities={proyect.skills} />
+						</section>
+					</a>
 				))}
 			</div>
 		</section>

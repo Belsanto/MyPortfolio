@@ -5,8 +5,9 @@ import Tittles from "../../components/Tittles/Tittles"
 
 const titles = [
 	"Software Developer.                 ",
-	"Unity Developer.                    ",
+	"Game Programmer.                    ",
 	"Systems and Computer Engineer.      ",
+	"Unity Developer.                    ",
 	"Game Developer.                     ",
 ]
 
