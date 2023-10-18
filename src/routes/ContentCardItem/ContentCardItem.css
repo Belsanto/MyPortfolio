@@ -3,7 +3,6 @@
 	height: 100%;
 	position: absolute;
 	right: 0px;
-	text-align: center;
 }
 .content-card main {
 	width: 100%;
@@ -21,7 +20,7 @@
 	}
 }
 
-@media (max-width: 389px){
+@media (max-width: 389px) {
 	.content-card {
 		height: 75vh;
 	}

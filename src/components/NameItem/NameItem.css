@@ -20,8 +20,8 @@
 	letter-spacing: -0.025em;
 }
 
-@media (max-height: 671px){
-	.presentation-box{
+@media (max-height: 671px) {
+	.presentation-box {
 		height: 30%;
 	}
 }
@@ -31,7 +31,7 @@
 	.presentation-box h1 {
 		font-size: 1.75rem;
 	}
-	.subtitle{
+	.subtitle {
 		font-size: 1rem;
 	}
 }
@@ -41,13 +41,12 @@
 	.presentation-box h1 {
 		font-size: 2.75rem;
 	}
-	.subtitle{
+	.subtitle {
 		font-size: 1.3rem;
 	}
 }
 
 @media (max-width: 820px), (max-height: 670px) {
-
 	.presentation-box {
 		order: 2;
 		display: flex;
@@ -58,10 +57,8 @@
 	}
 }
 
-@media (max-width: 389px){
-	
+@media (max-width: 389px) {
 	.presentation-box {
-	
 		margin-top: 5%;
 	}
 	.presentation-box h1 span:nth-child(1) {

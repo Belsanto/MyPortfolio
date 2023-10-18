@@ -36,10 +36,8 @@
 	}
 }
 
-@media (max-width: 389px){
-
+@media (max-width: 389px) {
 	.card-presentation {
 		height: 25vh;
 	}
-
 }

@@ -1,0 +1,11 @@
+.typing-text {
+	display: block;
+	white-space: nowrap;
+	border-right: 0.15em solid #3cb686;
+	width: 38ch;
+	overflow: hidden;
+	animation:
+		typing 2.8s steps(36) infinite,
+		step-end alternate infinite;
+	text-align: center;
+}

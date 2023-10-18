@@ -35,7 +35,7 @@ const navLinks = [
 		active: true,
 	},
 	{
-		id: "proyects",
+		id: "projects",
 		icon: <ImBooks className="nav-icon" />,
 		text: "Projects",
 		active: false,

@@ -7,6 +7,7 @@
 	--color-azul: #069aac; /* Azul intenso */
 	--color-gris: #eceff1; /* Gris claro */
 	--color-gris-oscuro: #5e5e63; /* Gris oscuro */
+	--color-nav: #b6b6b6; /* Gris oscuro */
 }
 
 /* Estilos generales */
@@ -180,7 +181,10 @@ p {
 	padding: 20px;
 	background-color: var(--color-blanco);
 }
-
+::selection {
+	background-color: var(--color-turquesa); /* Cambia el color de fondo del texto seleccionado */
+	color: var(--color-gris-oscuro); /* Cambia el color del texto seleccionado */
+}
 .card-title {
 	display: flex;
 	align-items: center;
@@ -189,7 +193,9 @@ p {
 	font-size: 1.8em;
 	text-transform: uppercase;
 }
-
+.big-tittle {
+	text-align: center;
+}
 /* Estilos de íconos de descarga */
 .download-exp-icon svg {
 	position: absolute;
@@ -224,4 +230,24 @@ p {
 		width: 1.7em;
 		height: 1.7em;
 	}
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-negro: #eceff1;
+		--color-blanco: #323235;
+		--color-gris: #222222;
+		--color-gris-oscuro: #5e5e63;
+		--color-nav: #f6f6f6;
+	}
+	/* Resto de los estilos específicos para el modo oscuro */
+	.App {
+		background-color: var(--color-gris);
+	}
+	::selection {
+		background-color: var(--color-negro);
+		color: var(--color-turquesa);
+	}
+	/* Otros estilos... */
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "./ProyectsCardItem.css"
 import video from "../../utils/videos/video1.mp4"
-import imagen1 from "../../utils/viticor.jpg"
+import imagen1 from "../../utils/img/viticor.jpg"
 
 const proyects = [
 	{

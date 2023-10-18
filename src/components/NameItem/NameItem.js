@@ -7,7 +7,7 @@ function NameItem() {
 			<h1>
 				<span>Santiago</span> <span>@Belsanto</span>
 			</h1>
-			<h2 className="subtitle">Desarrollador de Software</h2>
+			<h2 className="subtitle">Software Developer</h2>
 			<ButtonItem />
 		</section>
 	)

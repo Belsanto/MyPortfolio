@@ -102,17 +102,6 @@
 	font-weight: lighter;
 }
 
-.typing-text {
-	display: block;
-	white-space: nowrap;
-	border-right: 0.15em solid #3cb686;
-	width: 50ch;
-	animation:
-		typing 3s steps(48),
-		blink 0.5s step-end alternate;
-	overflow: hidden;
-}
-
 .card-motivation-words {
 	font-family: monospace;
 }
@@ -120,7 +109,9 @@
 .card-home section h1 {
 	font-size: 3em;
 }
-
+.lil-link {
+	color: var(--color-verde);
+}
 @keyframes typing {
 	from {
 		width: 0;

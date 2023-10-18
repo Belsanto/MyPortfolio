@@ -10,15 +10,17 @@
 }
 
 .tag {
-	background-color: #e0e0e0;
+	background-color: var(--color-blanco);
 	color: var(--color-negro);
 	font-size: 12px;
 	padding: 4px 10px;
 	margin: 4px;
 	border-radius: 20px;
 	font-weight: 600;
+	transition: 0.2s ease-out all;
 }
 
 .tag:hover {
 	opacity: 0.8;
+	transform: scale(1.2);
 }

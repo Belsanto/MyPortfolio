@@ -30,9 +30,9 @@
 		align-self: flex-start;
 	}
 }
-@media (max-width: 630px){
+@media (max-width: 630px) {
 	.socialMedia-box {
-		transform: scale(.8);
+		transform: scale(0.8);
 		flex-direction: column;
 		margin-top: 0;
 		width: 10%;
