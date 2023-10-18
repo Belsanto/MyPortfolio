@@ -80,6 +80,7 @@
 }
 
 .itch-card{
+	margin-top: 10px;
 	width: 80px;
 	aspect-ratio: 3/2;
 	object-fit: contain;
