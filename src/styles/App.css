@@ -232,34 +232,17 @@ p {
 	}
 }
 
-/* Modo oscuro */
-@media (prefers-color-scheme: dark) {
-	:root {
-		--color-negro: #eceff1;
-		--color-blanco: #323235;
-		--color-gris: #222222;
-		--color-gris-oscuro: #5e5e63;
-		--color-nav: #f6f6f6;
-	}
-	/* Resto de los estilos específicos para el modo oscuro */
-	.App {
-		background-color: var(--color-gris);
-	}
-	::selection {
-		background-color: var(--color-negro);
-		color: var(--color-turquesa);
-	}
-	/* Otros estilos... */
-}
 @media (max-height: 670px){
 	.card-app {
 		z-index: -1;
+		display: none;
 	}
 }
 
 @media (max-width: 820px){
 	.card-app {
 		z-index: -1;
+		display: none;
 	}
 }
 
@@ -269,8 +252,8 @@ body {
 }
 
 body {
-	background-color: var(--color-turquesa);
-	background-image: linear-gradient(180deg, var(--color-turquesa) 0%, var(--color-azul)  100%);
+	background-color: var(--color-verde);
+	background-image: linear-gradient(180deg, var(--color-verde) 0%, var(--color-turquesa)  100%);
 	background-size: 100% 100%;
 	display: flex;
 	align-items: center;
@@ -306,16 +289,24 @@ body {
 }
 .card__grid-effect-tile:before {
 	content: "";
-	color: var(--color-turquesa);
+	color: var(--color-azul);
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	height: 0.4rem;
-	width: 0.4rem;
+	height: 1.8rem;
+	width: 1.8rem;
 	border-radius: 50%;
 	background: var(--color-turquesa);
 	transition: 500ms linear all;
+	box-shadow:
+		0 0 0;
+	
+}
+.card__grid-effect-tile:hover:before {
+	height: .8rem;
+	width: .8rem;
+	transition: 100ms linear all;
 	box-shadow:
 		0 0 0,
 		3rem 0 0 -0.3rem,
@@ -399,8 +390,28 @@ body {
 		-12rem 12rem 0 -7.2rem,
 		-12rem -12rem 0 -7.2rem;
 }
-.card__grid-effect-tile:hover:before {
-	height: 1.5rem;
-	width: 1.5rem;
-	transition: 200ms linear all;
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-negro: #eceff1;
+		--color-blanco: #323235;
+		--color-gris: #222222;
+		--color-gris-oscuro: #5e5e63;
+		--color-nav: #f6f6f6;
+	}
+	/* Resto de los estilos específicos para el modo oscuro */
+	.App {
+		background-color: var(--color-gris);
+	}
+	::selection {
+		background-color: var(--color-negro);
+		color: var(--color-turquesa);
+	}
+	/* Otros estilos... */
+	
+	.card__grid-effect-tile:before {
+		
+	background: var(--color-gris);
+	}
 }
