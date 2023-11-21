@@ -47,9 +47,7 @@ const ProyectsCardItem = () => {
 					Main <br /> Projects
 				</h1>
 			</div>
-			<div className="proyect-flow">
-				<iframe title="pec3 (1)" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=3dda3249-bfaf-49ab-b968-9d545fce704a&autoAuth=true&ctid=6dee0e8b-96b5-4f65-a24c-9dc1d797cf82" frameborder="0" allowFullScreen="true"></iframe>
-			</div>
+			
 			<div className="proyect-flow">
 				{proyects.map((proyect, index) => (
 					<a
